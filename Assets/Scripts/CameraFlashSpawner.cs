@@ -9,6 +9,7 @@ public class CameraFlashSpawner : MonoBehaviour
     public GameObject _flashPrefab;
     public Transform _flashSpawnPos;
     public Transform _cameraTransform;
+    private GameObject _flashObj;
     
     private void Start()
     {
@@ -17,7 +18,14 @@ public class CameraFlashSpawner : MonoBehaviour
 
     public void CreateFlash()
     {
-        GameObject flashObj = Instantiate(_flashPrefab, _flashSpawnPos.position, _cameraTransform.rotation);
+        if (_flashObj == null)
+        {
+            _flashObj = Instantiate(_flashPrefab, _flashSpawnPos.position, _cameraTransform.rotation);
+        } else
+        {
+            _flashObj.transform.position = _flashSpawnPos.position;
+            _flashObj.transform.rotation = _cameraTransform.rotation;
+        }
     }
 
     public void SetPool(ObjectPool<GameObject> pool)

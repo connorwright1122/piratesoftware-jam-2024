@@ -18,13 +18,13 @@ MonoBehaviour:
     m_Value: 1
   threshold:
     m_OverrideState: 1
-    m_Value: 0.33
+    m_Value: 0.3
   intensity:
     m_OverrideState: 1
-    m_Value: 7.62
+    m_Value: 1
   scatter:
     m_OverrideState: 0
-    m_Value: 0.7
+    m_Value: 0.449
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -46,7 +46,7 @@ MonoBehaviour:
     dimension: 1
   dirtIntensity:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 0.55
 --- !u!114 &-6952765707161756137
 MonoBehaviour:
   m_ObjectHideFlags: 3
