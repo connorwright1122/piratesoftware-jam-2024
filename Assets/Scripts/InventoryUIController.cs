@@ -15,6 +15,8 @@ public class InventoryUIController : MonoBehaviour
     private VisualElement m_SlotContainer;
     private VisualElement m_DroppableContainer;
     private VisualElement m_CraftingContainer;
+    private VisualElement m_CraftingResult;
+    private VisualElement m_FlaskItem;
 
     private static VisualElement m_GhostIcon;
 
@@ -47,7 +49,11 @@ public class InventoryUIController : MonoBehaviour
         //CraftingItems = m_Root.Query<VisualElement>("CraftingContainer").Children<VisualElement>("InventorySlot").ToList();
         //CraftingItems = m_CraftingContainer.Query("InventorySlot").ToList();
         //CraftingItems = m_CraftingContainer.Query<VisualElement>().ToList();
-        CraftingItems = m_CraftingContainer.Query<VisualElement>(className: "slotContainer").ToList();
+        CraftingItems = m_DroppableContainer.Query<VisualElement>(className: "slotContainer").ToList();
+        m_CraftingResult = CraftingItems[2];
+        m_FlaskItem = CraftingItems[3];
+        //CraftingItems.RemoveAt(3);
+        CraftingItems.RemoveAt(2);
         // Log the number of crafting items found to help debug
         Debug.Log("Number of Crafting Items found: " + CraftingItems.Count);
 
@@ -152,6 +158,11 @@ public class InventoryUIController : MonoBehaviour
                 //Set the new inventory slot with the data
                 closestSlot.HoldItem(GameController.GetItemByGuid(m_OriginalSlot.ItemGuid));
 
+                if (closestSlot == m_FlaskItem)
+                {
+                    UpdateFlaskPower(m_OriginalSlot.ItemGuid);
+                }
+
                 //Clear the original slot
                 m_OriginalSlot.DropItem();
 
@@ -170,6 +181,11 @@ public class InventoryUIController : MonoBehaviour
         m_IsDragging = false;
         m_OriginalSlot = null;
         m_GhostIcon.style.visibility = Visibility.Hidden;
+
+    }
+
+    private void UpdateFlaskPower(string ItemGuid)
+    {
 
     }
 }
