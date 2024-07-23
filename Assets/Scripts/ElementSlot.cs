@@ -2,12 +2,12 @@ using Unity.VisualScripting;
 using UnityEngine.Scripting;
 using UnityEngine.UIElements;
 
-public class InventorySlot : VisualElement
+public class ElementSlot : VisualElement
 {
     public Image Icon;
     public string ItemGuid = "";
 
-    public InventorySlot()
+    public ElementSlot()
     {
         //Create a new Image element and add it to the root
         Icon = new Image();
@@ -36,8 +36,8 @@ public class InventorySlot : VisualElement
 
     public void DropItem()
     {
-        //ItemGuid = "";
-        //Icon.image = null;
+        ItemGuid = "";
+        Icon.image = null;
     }
 
     private void OnPointerDown(PointerDownEvent evt)
