@@ -26,6 +26,8 @@ public class PlayerCombatController : MonoBehaviour
 
     private bool _isPrimaryCooldown;
 
+    private bool _isZoom = false;
+
 
     public AttackArea _attackArea;
     //public ParticleSystem _meleeParticle;
@@ -57,17 +59,25 @@ public class PlayerCombatController : MonoBehaviour
         {
             if (_input.primary)
             {
-                Debug.Log("Attacked1");
-                Primary();
-            } 
+                if (!_isZoom)
+                {
+                    Debug.Log("Attacked1");
+                    Primary();
+                }
+            }
             /*
             else if (_input.secondary)
             {
 
             }
             */
+            else if (_input.zoom)
+            {
+                Zoom();
+            }
         }
         _input.primary = false;
+        _input.zoom = false;
     }
 
     private void Primary()
@@ -110,6 +120,35 @@ public class PlayerCombatController : MonoBehaviour
         //_meleeParticle.Play();
         _flaskAnimator.SetTrigger("FlaskSpray");
         StartCoroutine(PrimaryCooldown());
+    }
+
+    private void Zoom()
+    {
+        /*
+        foreach (var damageable in _attackArea.GetDamageablesInRange())
+        {
+            damageable.TakeDamage(10);
+            if (damageable.IsDestroyed())
+            {
+                IncreaseSizeAndPower();
+            }
+            Debug.Log("Attacked");
+        }
+        */
+
+        //CameraFlash();
+        //_timeSinceLastAttack = 0f;
+        //_meleeParticle.Play();
+        if (!_isZoom)
+        {
+            _flaskAnimator.SetTrigger("FlaskLook");
+        } else
+        {
+            _flaskAnimator.SetTrigger("FlaskIdle");
+        }
+        _isZoom = !_isZoom;
+        //StartCoroutine(PrimaryCooldown());
+        
     }
 
     private bool CanAttack()
