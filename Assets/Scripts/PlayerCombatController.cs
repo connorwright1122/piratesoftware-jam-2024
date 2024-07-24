@@ -25,7 +25,7 @@ public class PlayerCombatController : MonoBehaviour
     private bool _isPrimaryCooldown;
 
 
-    //public AttackArea _attackArea;
+    public AttackArea _attackArea;
     //public ParticleSystem _meleeParticle;
     //public GameObject _cameraFlashLight;
 
@@ -37,7 +37,7 @@ public class PlayerCombatController : MonoBehaviour
 #else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
 #endif
-        //_attackArea = GetComponentInChildren<AttackArea>();
+        _attackArea = GetComponentInChildren<AttackArea>();
         //_meleeParticle = GetComponentInChildren<ParticleSystem>();
         _cameraFlashSpawner = GetComponent<CameraFlashSpawner>();
     }
