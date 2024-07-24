@@ -12,7 +12,9 @@ public class PlayerCombatController : MonoBehaviour
 #if ENABLE_INPUT_SYSTEM
     private PlayerInput _playerInput;
 #endif
-    private Animator _animator;
+    public GameObject _flaskObject;
+    private Transform _flaskTransform;
+    private Animator _flaskAnimator;
     private CharacterController _controller;
     private StarterAssetsInputs _input;
     private CameraFlashSpawner _cameraFlashSpawner;
@@ -40,6 +42,8 @@ public class PlayerCombatController : MonoBehaviour
         _attackArea = GetComponentInChildren<AttackArea>();
         //_meleeParticle = GetComponentInChildren<ParticleSystem>();
         _cameraFlashSpawner = GetComponent<CameraFlashSpawner>();
+        _flaskAnimator = _flaskObject.GetComponent<Animator>();
+        _flaskTransform = _flaskObject.transform;
     }
 
     void Update()
@@ -55,7 +59,13 @@ public class PlayerCombatController : MonoBehaviour
             {
                 Debug.Log("Attacked1");
                 Primary();
+            } 
+            /*
+            else if (_input.secondary)
+            {
+
             }
+            */
         }
         _input.primary = false;
     }
@@ -74,9 +84,31 @@ public class PlayerCombatController : MonoBehaviour
         }
         */
 
-        CameraFlash();
+        //CameraFlash();
         _timeSinceLastAttack = 0f;
         //_meleeParticle.Play();
+        _flaskAnimator.SetTrigger("FlaskDrink");
+        StartCoroutine(PrimaryCooldown());
+    }
+
+    private void Secondary()
+    {
+        /*
+        foreach (var damageable in _attackArea.GetDamageablesInRange())
+        {
+            damageable.TakeDamage(10);
+            if (damageable.IsDestroyed())
+            {
+                IncreaseSizeAndPower();
+            }
+            Debug.Log("Attacked");
+        }
+        */
+
+        //CameraFlash();
+        _timeSinceLastAttack = 0f;
+        //_meleeParticle.Play();
+        _flaskAnimator.SetTrigger("FlaskSpray");
         StartCoroutine(PrimaryCooldown());
     }
 
