@@ -20,12 +20,16 @@ namespace StarterAssets
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+		public float SpeedMultiplier = 1.0f;
 
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
+		public float JumpMultiplier = 1.0f;
+
 		[Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
 		public float Gravity = -15.0f;
+		public float GravityMultiplier = 1.0f;
 
 		[Space(10)]
 		[Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
@@ -156,6 +160,8 @@ namespace StarterAssets
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
+			targetSpeed *= SpeedMultiplier;
+
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
@@ -215,7 +221,7 @@ namespace StarterAssets
 				if (_input.jump && _jumpTimeoutDelta <= 0.0f)
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
-					_verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+					_verticalVelocity = Mathf.Sqrt(JumpHeight * JumpMultiplier * -2f * Gravity);
 				}
 
 				// jump timeout
@@ -242,7 +248,7 @@ namespace StarterAssets
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocity < _terminalVelocity)
 			{
-				_verticalVelocity += Gravity * Time.deltaTime;
+				_verticalVelocity += Gravity * GravityMultiplier * Time.deltaTime;
 			}
 		}
 
@@ -264,5 +270,33 @@ namespace StarterAssets
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
 		}
-	}
+
+
+
+		public void ResetToDefaultMultipliers()
+		{
+			JumpMultiplier = 1.0f;
+			SpeedMultiplier = 1.0f;
+			GravityMultiplier = 1.0f;
+
+        }
+
+        public void IncreaseJumpMultiplier()
+        {
+            JumpMultiplier += 1.0f;
+            //SpeedMultiplier = 1.0f;
+        }
+
+        public void IncreaseSpeedMultiplier()
+        {
+            //JumpMultiplier += 1.0f;
+            SpeedMultiplier += 1.0f;
+        }
+
+        public void DecreaseGravityMultiplier()
+        {
+            //JumpMultiplier += 1.0f;
+            GravityMultiplier -= .25f;
+        }
+    }
 }

@@ -27,6 +27,9 @@ public class PlayerCombatController : MonoBehaviour
     private bool _isPrimaryCooldown;
 
     private bool _isZoom = false;
+    [SerializeField]
+    private int _flaskAttribute1 = 0;
+    private int _flaskAttribute2 = 0;
 
 
     public AttackArea _attackArea;
@@ -184,6 +187,46 @@ public class PlayerCombatController : MonoBehaviour
     private void CameraFlash()
     {
         _cameraFlashSpawner.CreateFlash();
+    }
+
+    public void SetFlaskAttributes(int value1, int value2)
+    {
+        _flaskAttribute1 = value1;
+        _flaskAttribute2 = value2;
+    }
+
+    public int getFlaskAttribute1()
+    {
+        return _flaskAttribute1;
+    }
+
+    public int getFlaskAttribute2()
+    {
+        return _flaskAttribute2;
+    }
+
+
+    public void HandleFlask()
+    {
+        switch (getFlaskAttribute1())
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+        }
+
+        switch (getFlaskAttribute2())
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+        }
     }
 
 
