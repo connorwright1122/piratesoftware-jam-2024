@@ -33,7 +33,8 @@ namespace StarterAssets
 		public bool jump;
 		public bool sprint;
         public bool primary;
-		public bool zoom;
+        public bool secondary;
+        public bool zoom;
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -84,6 +85,11 @@ namespace StarterAssets
             PrimaryInput(value.isPressed);
         }
 
+        public void OnSecondary(InputValue value)
+        {
+            SecondaryInput(value.isPressed);
+        }
+
         public void OnZoom(InputValue value)
         {
             ZoomInput(value.isPressed);
@@ -124,6 +130,11 @@ namespace StarterAssets
         private void PrimaryInput(bool newPrimaryState)
         {
             primary = newPrimaryState;
+        }
+
+        private void SecondaryInput(bool newSecondaryState)
+        {
+            secondary = newSecondaryState;
         }
 
         private void ZoomInput(bool newZoomState)

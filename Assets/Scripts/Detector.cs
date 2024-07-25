@@ -1,11 +1,19 @@
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ItemDetector : MonoBehaviour
 {
     public float maxDistance = 5f;
     //public LayerMask itemLayer;
     //public Inventory inventory; // Reference to the player's inventory
+    public Slider detectionSlider;
+    private bool objectDetected = false;
+
+    private void Start()
+    {
+        //detectionSlider = GetComponentInChildren<Slider>();
+    }
 
     void Update()
     {
@@ -17,6 +25,8 @@ public class ItemDetector : MonoBehaviour
         */
 
         DetectItem();
+        UpdateSlider();
+
     }
 
     void DetectItem()
@@ -24,17 +34,33 @@ public class ItemDetector : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
-            /*
-            ItemObject itemObject = hit.collider.GetComponent<ItemObject>();
+            
+            I_Interactable itemObject = hit.collider.GetComponent<I_Interactable>();
             if (itemObject != null)
             {
-                inventory.AddItem(itemObject.item);
+                //inventory.AddItem(itemObject.item);
+                objectDetected = true;
+                Debug.Log(hit.transform.gameObject.name);
             }
-            */
-            Debug.Log(hit.transform.gameObject.name);
+            else
+            {
+                objectDetected = false;
+            }
+            
+            //Debug.Log(hit.transform.gameObject.name);
             //Debug.Log(hit.gameObject.ToString());
+        } else
+        {
+            objectDetected = false;
         }
     }
+
+    void UpdateSlider()
+    {
+        float targetValue = objectDetected ? 1f : 0f;
+        detectionSlider.value = Mathf.Lerp(detectionSlider.value, targetValue, Time.deltaTime * 2f);
+    }
+
 
     private void OnDrawGizmos()
     {

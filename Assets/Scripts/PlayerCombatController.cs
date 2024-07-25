@@ -65,6 +65,14 @@ public class PlayerCombatController : MonoBehaviour
                     Primary();
                 }
             }
+            else if (_input.secondary)
+            {
+                if (!_isZoom)
+                {
+                    Debug.Log("Attacked2");
+                    Secondary();
+                }
+            }
             /*
             else if (_input.secondary)
             {
@@ -77,6 +85,7 @@ public class PlayerCombatController : MonoBehaviour
             }
         }
         _input.primary = false;
+        _input.secondary = false;
         _input.zoom = false;
     }
 
