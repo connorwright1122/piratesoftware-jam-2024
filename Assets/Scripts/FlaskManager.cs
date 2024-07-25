@@ -10,11 +10,11 @@ public class FlaskManager : MonoBehaviour
     public GameObject _invisQuad;
     public Light _flaskLight;
     public FirstPersonController _characterController;
-    private int _flaskAttribute1 = 0;
-    private int _flaskAttribute2 = 0;
+    public int _flaskAttribute1 = 0;
+    public int _flaskAttribute2 = 0;
 
     private Material _flaskLiquidMaterial;
-    private Material _flaskGlassMaterial;
+    public Material _flaskGlassMaterial;
 
     private Color _defaultGlassColor;
     private Color _hiddenGlassColor;
@@ -26,7 +26,7 @@ public class FlaskManager : MonoBehaviour
         _flaskLiquidMaterial = _flaskLiquid.GetComponent<Material>();
         _characterController = GetComponent<FirstPersonController>();
         _flaskLight = GetComponentInChildren<Light>();
-        _flaskLiquidMaterial = _invisQuad.GetComponent<Material>();
+        //_flaskGlassMaterial = _invisQuad.GetComponent<Material>();
         _defaultGlassColor = _flaskGlassMaterial.color;
         _hiddenGlassColor = new Color(_defaultGlassColor.r, _defaultGlassColor.g, _defaultGlassColor.b, .5f);
     }

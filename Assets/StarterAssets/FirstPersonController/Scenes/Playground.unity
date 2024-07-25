@@ -258,7 +258,7 @@ Transform:
   m_GameObject: {fileID: 55157727}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.553, y: 1, z: 0.989}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0.082499996}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8808,12 +8808,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367220331}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.125, z: 1}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 135756641613574979}
+  m_Father: {fileID: 768386855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1367220333
 MeshRenderer:
@@ -8822,7 +8822,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1367220331}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14135,6 +14135,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _particleSpawnLocation: {fileID: 1344456425}
   _particleSystem: {fileID: 1508634196}
+  _flaskManager: {fileID: 135756641613574985}
 --- !u!1 &1755752959
 GameObject:
   m_ObjectHideFlags: 0
@@ -14998,6 +14999,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 659118396}
+    - targetCorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1367220332}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 9005220659476430823, guid: 2d3a85ecde41a8246a79669975912b74,
         type: 3}
@@ -15070,8 +15075,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _flask: {fileID: 1577960166}
   _flaskLiquid: {fileID: 1111024192}
+  _invisQuad: {fileID: 1367220331}
   _flaskLight: {fileID: 0}
   _characterController: {fileID: 0}
+  _flaskAttribute1: 0
+  _flaskAttribute2: 0
   _flaskGlassMaterial: {fileID: 2100000, guid: b427a690e604390439a93328240225cf, type: 2}
 --- !u!1 &2114283753834967212
 GameObject:
@@ -15340,10 +15348,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 476633535}
-    - targetCorrespondingSourceObject: {fileID: 8997996947095583982, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1367220332}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
