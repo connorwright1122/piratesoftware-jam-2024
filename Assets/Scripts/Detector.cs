@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,6 +10,11 @@ public class ItemDetector : MonoBehaviour
     //public Inventory inventory; // Reference to the player's inventory
     public Slider detectionSlider;
     private bool objectDetected = false;
+
+    public GameObject noteButtonPrefab;
+    public Transform scrollViewContent;
+    public TextMeshProUGUI noteTextBox;
+
 
     private void Start()
     {
@@ -34,7 +40,24 @@ public class ItemDetector : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
+            I_Interactable interactable = hit.collider.GetComponent<I_Interactable>();
+            if (interactable != null)
+            {
+                objectDetected = true;
+            } else
+            {
+                objectDetected = false;
+            }
+
+            NoteItemHolder noteHolder = hit.collider.GetComponent<NoteItemHolder>();
+            if (noteHolder != null && !noteHolder.HasBeenCollected)
+            {
+                AddNoteToScrollView(noteHolder.noteItem);
+                objectDetected = true;
+                noteHolder.HasBeenCollected = true;  // Prevent multiple collections
+            }
             
+            /*
             I_Interactable itemObject = hit.collider.GetComponent<I_Interactable>();
             if (itemObject != null)
             {
@@ -46,10 +69,12 @@ public class ItemDetector : MonoBehaviour
             {
                 objectDetected = false;
             }
-            
+            */
+
             //Debug.Log(hit.transform.gameObject.name);
             //Debug.Log(hit.gameObject.ToString());
-        } else
+        }
+        else
         {
             objectDetected = false;
         }
@@ -60,6 +85,28 @@ public class ItemDetector : MonoBehaviour
         float targetValue = objectDetected ? 1f : 0f;
         detectionSlider.value = Mathf.Lerp(detectionSlider.value, targetValue, Time.deltaTime * 2f);
     }
+
+    void AddNoteToScrollView(NoteItem noteItem)
+    {
+        // Instantiate the note button prefab
+        GameObject newButton = Instantiate(noteButtonPrefab, scrollViewContent);
+
+        // Set the title of the note button
+        TextMeshProUGUI buttonText = newButton.GetComponentInChildren<TextMeshProUGUI>();
+        buttonText.text = noteItem.fileName;
+
+        // Add an onClick listener to the button
+        Button buttonComponent = newButton.GetComponent<Button>();
+        buttonComponent.onClick.AddListener(() => DisplayNoteContent(noteItem));
+    }
+
+    public void DisplayNoteContent(NoteItem noteItem)
+    {
+        // Set the text of the noteTextBox to the note content
+        noteTextBox.text = noteItem.fileText;
+    }
+
+
 
 
     private void OnDrawGizmos()

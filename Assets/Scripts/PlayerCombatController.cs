@@ -1,9 +1,12 @@
+using Cinemachine;
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.LowLevel;
+using UnityEngine.UI;
 using UnityEngine.Windows;
 
 public class PlayerCombatController : MonoBehaviour
@@ -31,10 +34,19 @@ public class PlayerCombatController : MonoBehaviour
     private int _flaskAttribute1 = 0;
     private int _flaskAttribute2 = 0;
 
+    private bool _isInTab;
+    //public CinemachineVirtualCamera _playerFollowCamera;
+    public CinemachineVirtualCamera _playerUICamera;
+
 
     public AttackArea _attackArea;
     //public ParticleSystem _meleeParticle;
     //public GameObject _cameraFlashLight;
+
+    public GameObject _inventoryGameobject;
+    //private Canvas _inventoryCanvas;
+    //private GraphicsRaycaster
+
 
     void Start()
     {
@@ -53,7 +65,9 @@ public class PlayerCombatController : MonoBehaviour
 
     void Update()
     {
+        TabCheck();
         PrimaryCheck();
+        
     }
 
     private void PrimaryCheck()
@@ -165,7 +179,7 @@ public class PlayerCombatController : MonoBehaviour
 
     private bool CanAttack()
     {
-        if (!_isPrimaryCooldown)
+        if (!_isPrimaryCooldown && _canAttack)
         {
             return true;
         }
@@ -227,6 +241,37 @@ public class PlayerCombatController : MonoBehaviour
             case 2:
                 break;
         }
+    }
+
+    private void TabCheck()
+    {
+        if (_input.inventory) 
+        {
+            if (_isInTab) //exit inventory
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                _input.cursorInputForLook = true;
+                _input.canMove = true;
+                _playerUICamera.Priority = 9;
+                _canAttack = true;
+                _inventoryGameobject.GetComponent<Canvas>().enabled = false;
+                _inventoryGameobject.GetComponent<GraphicRaycaster>().enabled = false;
+                _isInTab = false;
+                //_inventoryGameobject
+            } 
+            else //enter inventory
+            {
+                Cursor.lockState = CursorLockMode.Confined;
+                _input.cursorInputForLook = false;
+                _input.canMove = false;
+                _playerUICamera.Priority = 11;
+                _canAttack = false;
+                _inventoryGameobject.GetComponent<Canvas>().enabled = true;
+                _inventoryGameobject.GetComponent<GraphicRaycaster>().enabled = true;
+                _isInTab = true;
+            }
+        }
+        _input.inventory = false;
     }
 
 

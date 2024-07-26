@@ -35,6 +35,7 @@ namespace StarterAssets
         public bool primary;
         public bool secondary;
         public bool zoom;
+        public bool inventory;
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -42,6 +43,8 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
+
+        public bool canMove = true;
 
         private void Awake()
         {
@@ -94,6 +97,11 @@ namespace StarterAssets
         {
             ZoomInput(value.isPressed);
         }
+
+        public void OnInventory(InputValue value)
+        {
+            InventoryInput(value.isPressed);
+        }
 #endif
 
 
@@ -122,7 +130,7 @@ namespace StarterAssets
 			SetCursorState(cursorLocked);
 		}
 
-		private void SetCursorState(bool newState)
+		public void SetCursorState(bool newState)
 		{
 			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
 		}
@@ -140,6 +148,11 @@ namespace StarterAssets
         private void ZoomInput(bool newZoomState)
         {
             zoom = newZoomState;
+        }
+
+        private void InventoryInput(bool newInventoryState)
+        {
+            inventory = newInventoryState;
         }
     }
 	
