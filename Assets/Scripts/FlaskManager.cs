@@ -2,6 +2,9 @@ using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using UnityEngine.UI;
+//using static UnityEngine.Rendering.DebugUI;
+using TMPro;
 
 public class FlaskManager : MonoBehaviour
 {
@@ -21,9 +24,12 @@ public class FlaskManager : MonoBehaviour
 
     private bool _isHidden;
 
+    public TMP_Dropdown _flaskDropdown1;
+    public TMP_Dropdown _flaskDropdown2;
+
     void Start()
     {
-        _flaskLiquidMaterial = _flaskLiquid.GetComponent<Material>();
+        _flaskLiquidMaterial = _flaskLiquid.GetComponent<Renderer>().material;
         _characterController = GetComponent<FirstPersonController>();
         _flaskLight = GetComponentInChildren<Light>();
         //_flaskGlassMaterial = _invisQuad.GetComponent<Material>();
@@ -57,6 +63,13 @@ public class FlaskManager : MonoBehaviour
         _flaskAttribute1 = value1;
         _flaskAttribute2 = value2;
     }
+
+    public void UpdateFlaskAttributes()
+    {
+        SetFlaskAttributes(_flaskDropdown1.value, _flaskDropdown2.value);
+        Debug.Log("New Flask Values: " + _flaskDropdown1.value + " and " + _flaskDropdown2.value);
+    }
+
     public void SetFlaskMaterial(int value1, int value2)
     {
         switch (value1)

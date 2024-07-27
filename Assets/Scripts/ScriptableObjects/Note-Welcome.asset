@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Note-Welcome
   m_EditorClassIdentifier: 
   fileName: welcome.txt
-  fileText: Welcome user DECKNAME.  Browse files on left. Mix flask ingredients on
-    right.              Do not ask how you can mix items in a flask using a computer
-    terminal
+  fileText: Welcome user DECKNAME.<br>Browse files on left. <br><br>Mix flask ingredients
+    on right. <br>Do not ask how you can mix items in a flask using a computer terminal

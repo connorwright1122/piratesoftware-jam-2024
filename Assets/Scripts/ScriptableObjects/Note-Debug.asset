@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Note-Debug
   m_EditorClassIdentifier: 
   fileName: debug.txt
-  fileText: Hello World!
+  fileText: Hello World!<br>Hello World!

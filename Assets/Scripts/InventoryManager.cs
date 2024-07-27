@@ -21,6 +21,8 @@ public class InventoryManager : MonoBehaviour
 
     public void SetNotesText(string newText)
     {
-        notesText.SetText(newText);
+        string newText1 = newText.Replace("{\n}", "\n");
+        notesText.SetText(newText1);
+        notesText.text.Replace("{\n}", "\n");
     }
 }
