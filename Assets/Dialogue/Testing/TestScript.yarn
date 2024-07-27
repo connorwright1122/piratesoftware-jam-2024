@@ -1,0 +1,26 @@
+﻿title: Start
+tags: 
+position: -17,-22
+---
+Narrator: I am a detective: a detector of I'ves. And I've got an idea- I've got to solve this case. #line:detective-1-e-2 // dubious 
+    -> Hi, where am I? 
+        Narrator: You're in Unity! 
+            -> Oh. 
+                <<jump Oh>>
+            -> How did I get here? 
+                <<jump Unity>>
+===
+
+title: Oh
+tags: 
+position: -12,222
+---
+Narrator: Yeah, fun, right?  
+===
+
+title: Unity
+tags: 
+position: 249,43
+---
+Narrator: Someone read the Beginner's Guide! 
+===

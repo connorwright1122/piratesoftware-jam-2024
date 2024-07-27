@@ -1,4 +1,6 @@
 title: Start
+tags: 
+position: -143.0129451751709,17.804821610450745
 ---
 // Setting:
 // - Floating in space. Distant stars and nebulas. Nothing else is visible
@@ -69,6 +71,5 @@ Tom: What?! #line:tutorial-tom-11 // surprised, confused
 // The game suddenly quits. The 'quit' command is custom-defined by a
 // script in this demo, in QuitGameCommand.cs.
 <<quit>>
-
 ===
 
