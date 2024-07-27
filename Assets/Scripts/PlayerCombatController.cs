@@ -249,6 +249,7 @@ public class PlayerCombatController : MonoBehaviour
         {
             if (_isInTab) //exit inventory
             {
+                _flaskAnimator.speed = 1;
                 Cursor.lockState = CursorLockMode.Locked;
                 _input.cursorInputForLook = true;
                 _input.canMove = true;
@@ -261,6 +262,7 @@ public class PlayerCombatController : MonoBehaviour
             } 
             else //enter inventory
             {
+                _flaskAnimator.speed = 0;
                 Cursor.lockState = CursorLockMode.Confined;
                 _input.cursorInputForLook = false;
                 _input.canMove = false;

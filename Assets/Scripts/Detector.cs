@@ -98,6 +98,7 @@ public class ItemDetector : MonoBehaviour
         // Add an onClick listener to the button
         Button buttonComponent = newButton.GetComponent<Button>();
         buttonComponent.onClick.AddListener(() => DisplayNoteContent(noteItem));
+        buttonComponent.onClick.AddListener(() => SoundFXManager.Instance.PlaySoundFXClipUI());
     }
 
     public void DisplayNoteContent(NoteItem noteItem)
