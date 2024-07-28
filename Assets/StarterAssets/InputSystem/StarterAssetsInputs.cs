@@ -36,6 +36,7 @@ namespace StarterAssets
         public bool secondary;
         public bool zoom;
         public bool inventory;
+        public bool interact;
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -102,6 +103,11 @@ namespace StarterAssets
         {
             InventoryInput(value.isPressed);
         }
+
+        public void OnInteract(InputValue value)
+        {
+            InteractInput(value.isPressed);
+        }
 #endif
 
 
@@ -153,6 +159,11 @@ namespace StarterAssets
         private void InventoryInput(bool newInventoryState)
         {
             inventory = newInventoryState;
+        }
+
+        private void InteractInput(bool newState)
+        {
+            interact = newState;
         }
     }
 	

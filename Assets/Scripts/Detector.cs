@@ -1,7 +1,9 @@
+using StarterAssets;
 using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Windows;
 
 public class ItemDetector : MonoBehaviour
 {
@@ -15,10 +17,13 @@ public class ItemDetector : MonoBehaviour
     public Transform scrollViewContent;
     public TextMeshProUGUI noteTextBox;
 
+    private StarterAssetsInputs _input;
+
 
     private void Start()
     {
         //detectionSlider = GetComponentInChildren<Slider>();
+        _input = StarterAssetsInputs.Instance;
     }
 
     void Update()
@@ -44,6 +49,10 @@ public class ItemDetector : MonoBehaviour
             if (interactable != null)
             {
                 objectDetected = true;
+                if (objectDetected && _input.interact)
+                {
+                    interactable.Interact();
+                }
             } else
             {
                 objectDetected = false;
@@ -78,6 +87,8 @@ public class ItemDetector : MonoBehaviour
         {
             objectDetected = false;
         }
+
+        
     }
 
     void UpdateSlider()

@@ -26,7 +26,7 @@ public class SimpleSceneLoader : MonoBehaviour
             Instance = this;
         }
 
-        SceneFadeManager.Instance.StartFadeIn();
+        SimpleSceneFadeManager.Instance.StartFadeIn();
     }
 
 
@@ -63,10 +63,10 @@ public class SimpleSceneLoader : MonoBehaviour
 
     private IEnumerator FadeOutThenChangeScene(SceneField myScene)
     {
-        SceneFadeManager.Instance.StartFadeOut();
+        SimpleSceneFadeManager.Instance.StartFadeOut();
         Debug.Log("started fade");
 
-        while (SceneFadeManager.Instance.IsFadingOut)
+        while (SimpleSceneFadeManager.Instance.IsFadingOut)
         {
             Debug.Log("fading");
             yield return null;
@@ -79,7 +79,7 @@ public class SimpleSceneLoader : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
-        SceneFadeManager.Instance.StartFadeIn();
+        SimpleSceneFadeManager.Instance.StartFadeIn();
         /*
         if (_loadFromDoor)
         {

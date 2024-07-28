@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SceneFadeManager : MonoBehaviour
+public class SimpleSceneFadeManager : MonoBehaviour
 {
-    public static SceneFadeManager Instance;
+    public static SimpleSceneFadeManager Instance;
 
     [SerializeField] private Image _fadeOutImage;
     [Range(0.1f, 10f), SerializeField] private float _fadeOutSpeed = 5f;
@@ -28,7 +28,7 @@ public class SceneFadeManager : MonoBehaviour
         _fadeOutInstantColor.a = 1f;
     }
 
-    
+
 
     // Update is called once per frame
     void Update()
