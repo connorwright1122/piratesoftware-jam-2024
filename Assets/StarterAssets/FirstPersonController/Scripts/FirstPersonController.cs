@@ -68,9 +68,12 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
+        private Vector3 _lastGroundedPosition;
+
+
+
 #if ENABLE_INPUT_SYSTEM
-		private PlayerInput _playerInput;
+        private PlayerInput _playerInput;
 #endif
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
@@ -136,8 +139,15 @@ namespace StarterAssets
 		{
 			// set sphere position, with offset
 			Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z);
-			Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
-		}
+            bool wasGrounded = Grounded;
+            Grounded = Physics.CheckSphere(spherePosition, GroundedRadius, GroundLayers, QueryTriggerInteraction.Ignore);
+
+            if (Grounded && !wasGrounded)
+            {
+                // Update the last grounded position
+                _lastGroundedPosition = transform.position;
+            }
+        }
 
 		private void CameraRotation()
 		{
@@ -303,6 +313,14 @@ namespace StarterAssets
         {
             //JumpMultiplier += 1.0f;
             GravityMultiplier -= .25f;
+        }
+
+		public void SetToLastGroundedPosition()
+		{
+			_controller.enabled = false;
+            transform.position = _lastGroundedPosition;
+            _controller.enabled = true;
+
         }
     }
 }

@@ -1,3 +1,4 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class SceneSwapManager : MonoBehaviour
 
     private GameObject _player;
     private CharacterController _playerController;
+    private FirstPersonController _playerFPSController;
     private Collider _playerCollider;
     private Collider _doorCollider;
     private Transform _doorTransform;
@@ -29,6 +31,7 @@ public class SceneSwapManager : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         _playerController = _player.GetComponent<CharacterController>();
         _playerCollider = _player.GetComponent<Collider>();
+        _playerFPSController = _player.GetComponent<FirstPersonController>();
 
         //SceneFadeManager.Instance.InstantFadeOut();
         SceneFadeManager.Instance.StartFadeIn();
@@ -48,6 +51,25 @@ public class SceneSwapManager : MonoBehaviour
     {
         _loadFromDoor = true;
         Instance.StartCoroutine(Instance.FadeOutThenChangeScene(myScene, doorToSpawnAt));
+    }
+
+    public static void ResetPlayerToLastGrounded()
+    {
+        //_loadFromDoor = true;
+        Instance.StartCoroutine(Instance.SimpleFadeOutToIn());
+    }
+
+    private IEnumerator SimpleFadeOutToIn()
+    {
+        SceneFadeManager.Instance.StartFadeOut();
+
+        while (SceneFadeManager.Instance.IsFadingOut)
+        {
+            yield return null;
+        }
+
+        _playerFPSController.SetToLastGroundedPosition();
+        SceneFadeManager.Instance.StartFadeIn();
     }
 
     private IEnumerator FadeOutThenChangeScene(SceneField myScene, InteractableDoor.DoorToSpawnAt doorToSpawnAt = InteractableDoor.DoorToSpawnAt.None)

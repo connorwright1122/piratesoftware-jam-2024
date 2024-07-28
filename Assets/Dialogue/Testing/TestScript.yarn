@@ -27,12 +27,17 @@ Narrator: Someone read the Beginner's Guide!
 title: TestNPC
 position: 223,-166
 ---
-Deckname: Fisherman, fisher of men. //#line:detective-1-e-2 // dubious 
+Deckname: Fisherman, fisher of men. Give this man a fish of wisdom so he may think for a day. //#line:detective-1-e-2 // dubious 
 Fisherman: I fish where I am, and I fish where I swam.
     -> Catch anything?
         Deckname: Catch anything?
-        Fisherman: Used to have crappie. Now it's just crap and pee. 
+        Fisherman: The water used to have crappie. Now it's just full of crap and pee. 
     -> You swam in this filth?
         Deckname: You swam in this filth?
         Fisherman: Decades ago. Before everything went to shit. 
+===
+title: NewNote
+position: 230,228
+---
+Deckname: Note taken.
 ===
