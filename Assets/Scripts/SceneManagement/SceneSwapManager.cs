@@ -27,7 +27,7 @@ public class SceneSwapManager : MonoBehaviour
         _player = GameObject.FindGameObjectWithTag("Player");
         _playerCollider = _player.GetComponent<Collider>();
 
-        SceneFadeManager.Instance.InstantFadeOut();
+        //SceneFadeManager.Instance.InstantFadeOut();
         SceneFadeManager.Instance.StartFadeIn();
     }
 
@@ -55,13 +55,14 @@ public class SceneSwapManager : MonoBehaviour
         {
             yield return null;
         }
-
+        Debug.Log("Done fading out");
         _doorToSpawnTo = doorToSpawnAt;
         SceneManager.LoadScene(myScene);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
+        Debug.Log("Scene loaded");
         SceneFadeManager.Instance.StartFadeIn();
 
         if (_loadFromDoor)
@@ -70,6 +71,7 @@ public class SceneSwapManager : MonoBehaviour
             _player.transform.position = _playerSpawnPosition;
             _loadFromDoor = false;
         }
+        Debug.Log("player moved");
     }
 
     private void FindDoor(InteractableDoor.DoorToSpawnAt doorSpawnNumber)
