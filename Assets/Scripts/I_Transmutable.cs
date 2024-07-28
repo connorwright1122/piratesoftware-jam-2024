@@ -7,4 +7,8 @@ public interface I_Transmutable
     //public string  
 
     //public int type;
+
+    public bool IsDestroyable();
+    public void InitiateDestruction();
+    public int GetDestructionNumber();
 }

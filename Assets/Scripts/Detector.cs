@@ -103,6 +103,11 @@ public class ItemDetector : MonoBehaviour
         // Instantiate the note button prefab
         GameObject newButton = Instantiate(noteButtonPrefab, scrollViewContent);
 
+        //Increase the height of the content
+        RectTransform rt = scrollViewContent.GetComponent<RectTransform>();
+        rt.sizeDelta = new Vector2(rt.sizeDelta.x, rt.sizeDelta.y + 48);
+
+
         // Set the title of the note button
         TextMeshProUGUI buttonText = newButton.GetComponentInChildren<TextMeshProUGUI>();
         buttonText.text = noteItem.fileName;

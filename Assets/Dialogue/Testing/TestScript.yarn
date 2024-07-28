@@ -13,7 +13,7 @@ Deckname: I am a detective: a detector of I'ves. And I've got an idea- I've got 
 
 title: Oh
 tags: 
-position: -12,222
+position: -16,218
 ---
 Narrator: Yeah, fun, right?  
 ===
@@ -27,7 +27,7 @@ Narrator: Someone read the Beginner's Guide!
 title: TestNPC
 position: 223,-166
 ---
-Deckname: Fisherman, fisher of men. Give this man a fish of wisdom so he may think for a day. //#line:detective-1-e-2 // dubious 
+Deckname: Fisherman, fisher of men. Give this man a fish of wisdom so that he may think for a day. //#line:detective-1-e-2 // dubious 
 Fisherman: I fish where I am, and I fish where I swam.
     -> Catch anything?
         Deckname: Catch anything?
@@ -35,9 +35,15 @@ Fisherman: I fish where I am, and I fish where I swam.
     -> You swam in this filth?
         Deckname: You swam in this filth?
         Fisherman: Decades ago. Before everything went to shit. 
+    Fisherman: This city used to be a beautiful place. People used to talk to each other.  
 ===
 title: NewNote
 position: 230,228
 ---
 Deckname: Note taken.
+===
+title: CellsInterlinked
+position: 237,393
+---
+
 ===

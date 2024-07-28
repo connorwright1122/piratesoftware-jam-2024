@@ -15,6 +15,7 @@ public class FlaskManager : MonoBehaviour
     public FirstPersonController _characterController;
     public int _flaskAttribute1 = 0;
     public int _flaskAttribute2 = 0;
+    public ParticleSystem _splashParticles;
 
     private Material _flaskLiquidMaterial;
     public Material _flaskGlassMaterial;
@@ -26,6 +27,7 @@ public class FlaskManager : MonoBehaviour
 
     public TMP_Dropdown _flaskDropdown1;
     public TMP_Dropdown _flaskDropdown2;
+
 
     void Start()
     {
@@ -72,6 +74,7 @@ public class FlaskManager : MonoBehaviour
 
     public void SetFlaskMaterial(int value1, int value2)
     {
+        /*
         switch (value1)
         {
             case 1: // light
@@ -84,18 +87,25 @@ public class FlaskManager : MonoBehaviour
                 _flaskLiquidMaterial.SetFloat("_Emission", 0);
                 break;
         }
+        */
 
         if (value1 == 1 || value2 == 1)
         {
             _flaskLiquidMaterial.SetFloat("_Emission", 5);
+            var lights = _splashParticles.lights;
+            lights.enabled = true;
         }
         else if (value1 == 2 || value2 == 2)
         {
             _flaskLiquidMaterial.SetFloat("_Emission", -1);
+            var lights = _splashParticles.lights;
+            lights.enabled = false;
         }
         else
         {
             _flaskLiquidMaterial.SetFloat("_Emission", 0);
+            var lights = _splashParticles.lights;
+            lights.enabled = false;
         }
 
         /*

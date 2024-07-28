@@ -12,6 +12,14 @@ public class NotGround : MonoBehaviour
         {
             //controller.SetToLastGroundedPosition();
             SceneSwapManager.ResetPlayerToLastGrounded();
+        } else if (other.gameObject.CompareTag("Particle"))
+        {
+            Debug.Log("Le particle");
         }
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        Debug.Log("particle hit");
     }
 }
