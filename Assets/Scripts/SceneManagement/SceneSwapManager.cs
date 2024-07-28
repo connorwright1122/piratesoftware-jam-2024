@@ -12,6 +12,7 @@ public class SceneSwapManager : MonoBehaviour
     private GameObject _player;
     private Collider _playerCollider;
     private Collider _doorCollider;
+    private Transform _doorTransform;
     private Vector3 _playerSpawnPosition;
 
 
@@ -25,7 +26,7 @@ public class SceneSwapManager : MonoBehaviour
         }
 
         _player = GameObject.FindGameObjectWithTag("Player");
-        _playerCollider = _player.GetComponent<Collider>();
+        //_playerCollider = _player.GetComponent<Collider>();
 
         //SceneFadeManager.Instance.InstantFadeOut();
         SceneFadeManager.Instance.StartFadeIn();
@@ -64,14 +65,15 @@ public class SceneSwapManager : MonoBehaviour
     {
         Debug.Log("Scene loaded");
         SceneFadeManager.Instance.StartFadeIn();
-
+        Debug.Log(_loadFromDoor);
         if (_loadFromDoor)
         {
             FindDoor(_doorToSpawnTo);
             _player.transform.position = _playerSpawnPosition;
+            Debug.Log(_player.transform.position);
             _loadFromDoor = false;
         }
-        Debug.Log("player moved");
+        Debug.Log("player spawned");
     }
 
     private void FindDoor(InteractableDoor.DoorToSpawnAt doorSpawnNumber)
@@ -82,7 +84,8 @@ public class SceneSwapManager : MonoBehaviour
         {
             if (doors[i]._currentDoorPosition == doorSpawnNumber)
             {
-                _doorCollider = doors[i].gameObject.GetComponent<Collider>();
+                //_doorCollider = doors[i].gameObject.GetComponent<Collider>();
+                _doorTransform = doors[i].gameObject.transform;
                 CalculateSpawnPosition();
                 return;
             }
@@ -91,7 +94,9 @@ public class SceneSwapManager : MonoBehaviour
 
     private void CalculateSpawnPosition()
     {
-        float colliderHeight = _playerCollider.bounds.extents.y;
-        _playerSpawnPosition = _doorCollider.transform.position - new Vector3(0f, colliderHeight, 0f);
+        //float colliderHeight = _playerCollider.bounds.extents.y;
+        //_playerSpawnPosition = _doorCollider.transform.position - new Vector3(0f, colliderHeight, 1f);
+        _playerSpawnPosition = _doorTransform.position - new Vector3(0f, 0f, 1f);
+        Debug.Log(_playerSpawnPosition);
     }
 }

@@ -53,6 +53,7 @@ public class ItemDetector : MonoBehaviour
                 {
                     interactable.Interact();
                 }
+                _input.interact = false;
             } else
             {
                 objectDetected = false;

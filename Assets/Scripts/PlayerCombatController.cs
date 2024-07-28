@@ -104,6 +104,7 @@ public class PlayerCombatController : MonoBehaviour
         _input.primary = false;
         _input.secondary = false;
         _input.zoom = false;
+        _input.interact = false;
     }
 
     private void Primary()
