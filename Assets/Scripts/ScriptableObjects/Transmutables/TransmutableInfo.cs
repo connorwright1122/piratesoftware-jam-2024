@@ -7,5 +7,5 @@ public class TransmutableInfo : ScriptableObject
 {
     public bool isDestroyable;
     public int destructionNumber;
-    public int type;
+    public int startType;
 }

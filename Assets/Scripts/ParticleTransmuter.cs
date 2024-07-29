@@ -41,9 +41,9 @@ public class ParticleTransmuter : MonoBehaviour
             {
                 if (att1 == transmutable.GetDestructionNumber() || att2 == transmutable.GetDestructionNumber())
                 {
-                    transmutable.InitiateDestruction();
+                    transmutable.InitiateAction();
                 }
-            } else
+            } else //is transmutable
             {
 
             }

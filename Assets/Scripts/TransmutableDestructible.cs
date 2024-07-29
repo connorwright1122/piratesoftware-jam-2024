@@ -7,14 +7,22 @@ public class TransmutableDestructible : MonoBehaviour, I_Transmutable
     public TransmutableInfo transmutableInfo;
     public float duration = 1.0f; // Duration of the scale decrease
     public Vector3 targetScale = new Vector3(0.1f, 0.1f, 0.1f); // Target scale
+    public int currentType;
 
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentType = transmutableInfo.startType;
+    }
+
+    
 
     public int GetDestructionNumber()
     {
         return transmutableInfo.destructionNumber;
     }
 
-    public void InitiateDestruction()
+    public void InitiateAction()
     {
         StartCoroutine(DecreaseScale());
         //throw new System.NotImplementedException();
@@ -42,16 +50,13 @@ public class TransmutableDestructible : MonoBehaviour, I_Transmutable
         Destroy(gameObject);
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    public int GetCurrentType()
     {
-        
+        return currentType;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetCurrentType(int newType)
     {
-        
+        currentType = newType;
     }
 }

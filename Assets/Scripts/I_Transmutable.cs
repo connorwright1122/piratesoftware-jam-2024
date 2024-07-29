@@ -9,6 +9,8 @@ public interface I_Transmutable
     //public int type;
 
     public bool IsDestroyable();
-    public void InitiateDestruction();
+    public void InitiateAction();
     public int GetDestructionNumber();
+    public int GetCurrentType();
+    public void SetCurrentType(int newType);
 }
