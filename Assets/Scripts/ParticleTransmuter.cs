@@ -5,6 +5,12 @@ using UnityEngine;
 public class ParticleTransmuter : MonoBehaviour
 {
     public FlaskManager _flaskManager;
+    private SoundFXManager soundPlayer;
+
+    private void Start()
+    {
+        soundPlayer = SoundFXManager.Instance;
+    }
 
     /*
      * case 0: // nothing
@@ -31,6 +37,7 @@ public class ParticleTransmuter : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         Debug.Log("particle collided");
+        soundPlayer.PlaySoundFXClip(soundPlayer.soundFXClips[2], this.transform, 1);
         I_Transmutable transmutable = other.GetComponent<I_Transmutable>();
         if (transmutable != null)
         {

@@ -121,6 +121,14 @@ public class ItemDetector : MonoBehaviour
     public void DisplayNoteContent(NoteItem noteItem)
     {
         // Set the text of the noteTextBox to the note content
+        //noteTextBox.
+        if (noteItem.centered)
+        {
+            noteTextBox.alignment = TextAlignmentOptions.TopGeoAligned;
+        } else
+        {
+            noteTextBox.alignment = TextAlignmentOptions.TopLeft;
+        }
         noteTextBox.text = noteItem.fileText;
     }
 

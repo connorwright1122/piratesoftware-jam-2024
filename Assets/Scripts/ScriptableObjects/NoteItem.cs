@@ -4,5 +4,6 @@ using UnityEngine;
 public class NoteItem : ScriptableObject
 {
     public string fileName;
-    public string fileText; 
+    public string fileText;
+    public bool centered;
 }

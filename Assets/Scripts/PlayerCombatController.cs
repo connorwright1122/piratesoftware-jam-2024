@@ -47,6 +47,8 @@ public class PlayerCombatController : MonoBehaviour
     //private Canvas _inventoryCanvas;
     //private GraphicsRaycaster
 
+    private SoundFXManager _soundFXManager;
+
 
     void Start()
     {
@@ -61,6 +63,7 @@ public class PlayerCombatController : MonoBehaviour
         _cameraFlashSpawner = GetComponent<CameraFlashSpawner>();
         _flaskAnimator = _flaskObject.GetComponent<Animator>();
         _flaskTransform = _flaskObject.transform;
+        _soundFXManager = SoundFXManager.Instance;
     }
 
     void Update()
@@ -125,6 +128,7 @@ public class PlayerCombatController : MonoBehaviour
         _timeSinceLastAttack = 0f;
         //_meleeParticle.Play();
         _flaskAnimator.SetTrigger("FlaskDrink");
+        _soundFXManager.PlaySoundFXClip(_soundFXManager.soundFXClips[1], this.transform, 1);
         StartCoroutine(PrimaryCooldown());
     }
 
