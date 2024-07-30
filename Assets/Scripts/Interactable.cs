@@ -8,7 +8,8 @@ public class Interactable : MonoBehaviour, I_Interactable
 
     public void Interact()
     {
-        throw new System.NotImplementedException();
+        //throw new System.NotImplementedException();
+        Debug.Log("Interacted with");
     }
 
     // Start is called before the first frame update

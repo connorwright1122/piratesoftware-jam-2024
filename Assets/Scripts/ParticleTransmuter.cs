@@ -38,6 +38,16 @@ public class ParticleTransmuter : MonoBehaviour
     {
         Debug.Log("particle collided");
         soundPlayer.PlaySoundFXClip(soundPlayer.soundFXClips[2], this.transform, 1);
+
+        if (_flaskManager.getFlaskAttribute1() == 2 || _flaskManager.getFlaskAttribute2() == 2)
+        {
+            _flaskManager.StartInvisibility();
+        }
+        if (_flaskManager.getFlaskAttribute1() == 3 || _flaskManager.getFlaskAttribute2() == 3)
+        {
+            _flaskManager.StartIR();
+        }
+
         I_Transmutable transmutable = other.GetComponent<I_Transmutable>();
         if (transmutable != null)
         {

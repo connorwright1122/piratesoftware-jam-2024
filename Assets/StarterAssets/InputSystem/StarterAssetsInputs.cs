@@ -46,6 +46,7 @@ namespace StarterAssets
 		public bool cursorInputForLook = true;
 
         public bool canMove = true;
+        public bool canLook = true;
 
         private void Awake()
         {
@@ -58,6 +59,11 @@ namespace StarterAssets
             {
                 Destroy(gameObject);
             }
+        }
+
+        public void SetCanMove(bool value)
+        {
+            canMove = value;
         }
 
 #if ENABLE_INPUT_SYSTEM

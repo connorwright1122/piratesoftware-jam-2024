@@ -129,7 +129,7 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
-			if (_input.canMove)
+			if (_input.canLook)
 			{
 				CameraRotation();
 			}

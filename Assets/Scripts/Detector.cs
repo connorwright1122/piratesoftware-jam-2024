@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Windows;
 
-public class ItemDetector : MonoBehaviour
+public class Detector : MonoBehaviour
 {
     public float maxDistance = 5f;
     //public LayerMask itemLayer;
@@ -18,6 +18,8 @@ public class ItemDetector : MonoBehaviour
     public TextMeshProUGUI noteTextBox;
 
     private StarterAssetsInputs _input;
+
+    public FlaskManager flaskManager;
 
 
     private void Start()
@@ -66,7 +68,16 @@ public class ItemDetector : MonoBehaviour
                 objectDetected = true;
                 noteHolder.HasBeenCollected = true;  // Prevent multiple collections
             }
-            
+
+            AlchemyItemHolder alcItem = hit.collider.GetComponent<AlchemyItemHolder>();
+            if (alcItem != null && !alcItem.HasBeenCollected)
+            {
+                //AddNoteToScrollView(noteHolder.noteItem);
+                flaskManager.UnlockElement(alcItem.alchemyNum);
+                objectDetected = true;
+                alcItem.HasBeenCollected = true;  // Prevent multiple collections
+            }
+
             /*
             I_Interactable itemObject = hit.collider.GetComponent<I_Interactable>();
             if (itemObject != null)
