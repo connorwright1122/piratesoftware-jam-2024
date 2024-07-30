@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90605aedb2a56804aa5d3b5a9517eac6, type: 3}
+  m_Name: txt-manifesto
+  m_EditorClassIdentifier: 
+  fileName: manifesto.txt
+  fileText: "AUTHOR: ADEPT\t<br> Through trials of steel and vitriol, I have glimpsed
+    this city's soul.\t<br> Our city, once a beacon, now languishes in its own decay,\t<br>
+    But I offer a path, a transmutation of what was once lost.\t<br> \t<br> Seek
+    out the alchemical whispers in the smog,\t<br> That hold the power to reshape,
+    to cleanse, to ignite.\t<br> In our unity, we shall forge the [REDACTED], the
+    [REDACTED].\t<br> \t<br> Our destiny begins at the origin of my sin.\t<br>"
+  centered: 0

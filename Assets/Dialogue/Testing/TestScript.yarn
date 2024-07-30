@@ -51,15 +51,15 @@ Boss: Who are you?
 -> Detective Deckname.
 Deckname: Detective Deckname.
 Boss: Who do you work for?
--> Hermetic Solutions.
-Deckname: Hermetic Solutions.
+-> Hermetica Solutions.
+Deckname: Hermetica Solutions.
 Boss: What is your purpose? To work. 
 -> To work.
 Deckname: To work.
 Boss: What gives you meaning in life? To work. 
 -> To work.
 Deckname: To work.
-Boss: At Hermetic Solutions, we are all a family. Interconnected. 
+Boss: At Hermetica Solutions, we are all a family. Interconnected. 
 -> Interconnected.
 Deckname: Interconnected.
 Boss: I had disgusting sex with your mother last night. Interconnected. 
@@ -86,4 +86,15 @@ Boss: You're fired. Effective immediately. I'm taking over the case myself. Leav
 Deckman: What
 Boss: Get the fuck out before I throw you out the window you worthless piece of junk!
 
+===
+title: FriendMark
+position: 475,-165
+---
+
+Deckname: 
+Mark: Damn.
+Mark: Didn't know I was talking to a jobless loser. 
+Deckname: What
+Mark: Poetry slam. It's where they spit straight fire. Makes your soul ignite. You can sit at the back with me. 
+Deckname: 
 ===
