@@ -24,7 +24,7 @@ position: 249,43
 ---
 Narrator: Someone read the Beginner's Guide! 
 ===
-title: TestNPC
+title: Fisherman
 position: 223,-166
 ---
 Deckname: Fisherman, fisher of men. Give this man a fish of wisdom so that he may think for a day. //#line:detective-1-e-2 // dubious 
@@ -35,10 +35,12 @@ Fisherman: I fish where I am, and I fish where I swam.
     -> You swam in this filth?
         Deckname: You swam in this filth?
         Fisherman: Decades ago. Before everything went to shit. 
-    Fisherman: This city used to be a beautiful place. People used to talk to each other.  
+Fisherman: This city used to be a beautiful place. Then Hermetica Solutions bought the whole damn thing. And that big dam thing over there.
+Fisherman: Another one of you robots were talking about bringing change to the city. Then he started swimming in the shit water towards that building so I'm assuming he's dead now. 
+
 ===
 title: NewNote
-position: 230,228
+position: 537,249
 ---
 Deckname: Note taken.
 ===
@@ -62,39 +64,107 @@ Deckname: To work.
 Boss: At Hermetica Solutions, we are all a family. Interconnected. 
 -> Interconnected.
 Deckname: Interconnected.
-Boss: I had disgusting sex with your mother last night. Interconnected. 
-Deckname: Interconnected.
-Boss: You see a hot robo babe. Hell yeah. 
--> Hell yeah.
-Deckname: Hell yeah.
-Boss: I'm also having an affair with your ex-wife, Luna. Interconnected.
+Boss: What is it like to hold the hand of someone you love? Interconnected. 
 -> Interconnected.
 Deckname: Interconnected.
-Boss: Just wanted to get that stuff off of my chest. Interconnected.
+Boss:  Last night I made hot sweaty love to your ex-wife, Luna. Interconnected. 
+-> Interconnected.
+Deckname: Interconnected.
+Boss: Just wanted to get that off my chest. Interconnected.
 -> Interconnected.
 Deckname: Interconnected.
 
+
 Boss: Welcome home Detective Deckname. You've can't solve a case without fucking it up, but at least you can do the bare minimum and pass that.
-Deckname: Your kindness is a gentle ripple in the ocean of my gratitude, boss man.
-Boss: Shut the fuck up, Deckman. We have a new case for you. An alchemist at Crasis Labs was killed over by the Canals. Incredibly basic plot setup. You get the deal. Are you up for it?
+Deckname: Your kindness is a gentle ripple in the ocean of my gratitude, Bossman.
+Boss: Shut the fuck up, Deckman. We have a new case for you. An alchemist at Hermetica Labs was killed outside of a McHermetica's. The killer left a manifesto. Adding it to your notes now. 
+-> Press tab to view notes.
+Boss: Incredibly basic plot setup. You get the deal. Are you up for it?
 Deckname: I am a detective: a detector of I'ves. And I've got a premonition- I've got to solve this case.
 Boss: I swear to god Deckman, are you drinking on the job again?
 Deckname: To drink is to silence the cries within-side you. 
 Boss: If you pull one more bullshit philosophical quote out of your ass I'm firing you immediately.
 Deckname: But to speak is to cry from the silence without-side you. 
 Boss: You're fired. Effective immediately. I'm taking over the case myself. Leave the building and don't come back.
-Deckman: What
-Boss: Get the fuck out before I throw you out the window you worthless piece of junk!
+Deckman: What.
+Boss: Get the fuck out before I throw you out the god damn window!
 
 ===
-title: FriendMark
-position: 475,-165
+title: CallMark
+position: 523,-371
 ---
-
-Deckname: 
+Mark: Hey Deckman.
+Deckname: I got fired. 
 Mark: Damn.
-Mark: Didn't know I was talking to a jobless loser. 
-Deckname: What
+Mark: Didn't know I was talking to a jobless loser. Hahahahaha.
+Deckname: The cynic in me rejoices at your jest. 
+Mark: A robot without a job is worthless though. It's like Hermetica without the beautiful smog. Hahahahaha. 
+Mark: I bet it was all the goofy poetic shit you do. I know what will cheer you up. Let's go to a POETRY SLAM!
+Deckname: What.
 Mark: Poetry slam. It's where they spit straight fire. Makes your soul ignite. You can sit at the back with me. 
-Deckname: 
+Deckname: Maybe. 
+Mark: Well it's in the building next to the [INSERT HOLOGRAM HERE] in the Phosphor District if you want to go. 
+Mark: There's also a rooftop party at the [INSERT BUILDING HERE] if you want some sun instead. 
+Deckname: I need to check the groceries in my fridge first. 
+Mark: Okay man. Just don't embarass me. 
+<<jump TelephonePrompt>>
+===
+title: PartyGoer1
+position: 518,34
+---
+Ukelele: Oh, hey man. Welcome to the party. 
+PartyGoer1: Everyone left because this dude put on his Ukelele Mix.
+Ukelele: Actually, it's a Zither.
+PartyGoer1: I don't give a shit, I don't want to hear it unless I'm next to a beautiful beach in New Honolulu with my smoking hot robo babe. 
+-> Hell yeah.
+    Deckname: Hell yeah. 
+    Ukelele: Hell yeah, dude. The function's over but help yourself to anything that's left. 
+-> Beauty is naught but a matter of perspective, whether in the waves of the ocean or the clouds above or thy love begotten.
+    Deckname: Beauty is naught but a matter of perspective, whether in the waves of the ocean, the clouds above, or thy love begotten.
+    Ukelele: Thanks, man. You ruined the vibe. Get the fuck out of here and go to a poetry slam or something.
+PartyGoer1: Go get the stuff up off the top level of the roof too while you're at it. 
+===
+title: PartyTest
+position: 500,-189
+---
+PartyGoer1: Initilializing Rooftop Party Access Test.
+PartyGoer1: Who do you work for?
+-> I am unemployed.
+Deckname: I am unemployed.
+PartyGoer1: lol
+PartyGoer1: Are you sure you don't work for Hermetica Solutions? 
+-> All robo cops are bastards.
+PartyGoer1: What gives you meaning in life? 
+-> To party hard.
+Deckname: To party hard.
+Partygoer1: Okay, cool you're in. 
+===
+title: TelephonePrompt
+position: 470,-585
+---
+-> Call Mark.
+    Phone: ...
+    <<jump CallMark>>
+-> Call Luna.
+    Phone: ...
+    <<jump CallLuna>>
+-> Nevermind.
+===
+title: CallLuna
+position: 724,-530
+---
+Phone: Thank you for calling Hermetica Red Light Inn. Connecting you with Luna. 
+Luna: Hello, who is this?
+Deckman: Detective Deckman.
+Luna: How the fuck did you get this number? 
+Deckman: I am a detective: a detector of I'ves. And I've got to know how my beautiful ex-wife is doing.
+Luna: Don't call me that. And don't call me at work. And don't ever call me again. 
+Phone: ...
+Deckman: Chasing her was like trying to catch smog in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
+<<jump TelephonePrompt>>
+===
+title: HangInThere
+position: 847,-321
+---
+Deckman: Staring at that cat poster, I saw myself in those desperate, dangling claws clinging to hope in a world that's just a tad too slick with shadows.
 ===
