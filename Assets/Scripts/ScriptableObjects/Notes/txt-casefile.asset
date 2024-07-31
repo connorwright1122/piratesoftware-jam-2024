@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: txt-casefile
   m_EditorClassIdentifier: 
   fileName: case-file.txt
-  fileText: "AUTHOR: BOSSMAN\t<br> Case Number: 0424-TRH\t<br> \t<br> Victim: Elias
-    Morrow\t<br> Occupation: Lead Alchemist at Hermetica Corp Laboratory\t<br> Age:
-    42\t<br> \t<br> Cause of Death: Blunt force trauma to the head, chemical burns.\t<br>
-    \t<br> Location: Outside of Hermetica Corp Laboratory, Central District\t<br>"
+  fileText: "AUTHOR: BOSSMAN\t<br> Case Number: 0424-TRH\t<br> \t<br> Victim: Al
+    Kimmy Enshadoughs\t<br> \t<br> Occupation: Lead Alchemist at Hermetica Corp Research
+    Laboratories\t<br> \t<br> Cause of Death: Chemical burns(?). Witnesses claim
+    victim 'dissolved into nothing.'\t<br> \t<br> Location: Outside of McHermies,
+    Canal District\t<br>"
   centered: 0

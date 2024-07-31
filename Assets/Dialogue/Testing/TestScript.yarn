@@ -47,7 +47,7 @@ Deckname: Note taken.
 title: CellsInterlinked
 position: 237,393
 ---
-Boss: Turn around, Deckman. 
+Boss: Turn around, Deckname. 
 Boss: Initializing Company Loyalty Test. 
 -> Press enter to confirm dialogue.
 Boss: Who are you?
@@ -79,25 +79,25 @@ Deckname: Interconnected.
 Boss: Welcome home Detective Deckname. You've can't solve a case without fucking it up, but at least you can do the bare minimum and pass that.
 -> Thanks.
 Deckname: Your kindness is a gentle ripple in the ocean of my gratitude, Bossman.
-Boss: Shut the fuck up, Deckman. We have a new case for you. An alchemist at Hermetica Labs was killed outside of a McHermetica's. The killer left a manifesto. Adding it to your notes now. 
+Boss: Shut the fuck up, Deckname. We have a new case for you. An alchemist at Hermetica Labs was killed outside of a McHermetica's. The killer left a manifesto. Adding it to your notes now. 
 Boss: Incredibly basic plot setup. You get the deal. Are you up for it?
 -> Yes.
 Deckname: I am a detective: a detector of I'ves. And I've got a premonition- I've got to solve this case.
-Boss: I swear to god Deckman, are you drinking on the job again?
+Boss: I swear to god Deckname, are you drinking on the job again?
 -> No.
 Deckname: To drink is to silence the cries within-side you. 
 Boss: If you pull one more bullshit philosophical quote out of your ass I'm firing you immediately.
 -> Definitely won't.
 Deckname: ...but to speak is to cry from the silence without-side you. 
 Boss: You're fired. Effective immediately. I'm taking over the case myself. Leave the building and don't come back.
-Deckman: What.
+Deckname: What.
 Boss: Get the fuck out before I throw you out the god damn window!
 
 ===
 title: CallMark
 position: 523,-371
 ---
-Mark: Hey Deckman.
+Mark: Hey Deckname.
 Deckname: I got fired. 
 Mark: Damn.
 Mark: Didn't know I was talking to a jobless loser. Hahahahaha.
@@ -117,13 +117,13 @@ title: PartyGoer1
 position: 518,34
 ---
 Ukelele: Oh, hey man. Welcome to the party. 
-PartyGoer1: Everyone left because this dude put on his Ukelele Mix.
-Ukelele: Actually, it's a Zither.
+PartyGoer1: Everyone left because this dude put on his Noir Ukelele Mix.
+Ukelele: Actually, it's a Zither and it's a beautiful instrument. 
 PartyGoer1: I don't give a shit, I don't want to hear it unless I'm next to a beautiful beach in New Honolulu with my smoking hot robo babe. 
 -> Hell yeah.
     Deckname: Hell yeah. 
     Ukelele: Hell yeah, dude. The function's over but help yourself to anything that's left. 
--> Beauty is naught but a matter of perspective, whether in the waves of the ocean or the clouds above or thy love begotten.
+-> Say some poetic shit.
     Deckname: Beauty is naught but a matter of perspective, whether in the waves of the ocean, the clouds above, or thy love begotten.
     Ukelele: Thanks, man. You ruined the vibe. Get the fuck out of here and go to a poetry slam or something.
 PartyGoer1: Go get the stuff up off the top level of the roof too while you're at it. 
@@ -159,17 +159,17 @@ position: 724,-530
 ---
 Phone: Thank you for calling Hermetica Red Light Inn. Connecting you with Luna. 
 Luna: Hello, who is this?
-Deckman: Detective Deckman.
+Deckname: Detective Deckname.
 Luna: How the fuck did you get this number? 
-Deckman: I am a detective: a detector of I'ves. And I've got to know how my beautiful ex-wife is doing.
+Deckname: I am a detective: a detector of I'ves. And I've got to know how my beautiful ex-wife is doing.
 Luna: Don't call me that. And don't call me at work. And don't ever call me again. 
 Phone: ...
-Deckman: Chasing her was like trying to catch a shadow in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
+Deckname: Chasing her was like trying to catch a shadow in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
 ===
 title: HangInThere
 position: 847,-321
 ---
-Deckman: Staring at that cat poster, I saw myself in those desperate, dangling claws clinging to hope in a world that's just a tad too slick with shadows.
+Deckname: Staring at that cat poster, I saw myself in those desperate, dangling claws clinging to hope in a world that's just a tad too slick with shadows.
 ===
 title: IntroMonologue
 position: 810,132
@@ -234,7 +234,7 @@ Luna: GET THE FUCK OUT DECKNAME.
 Deckname: In the corner of my eye, I couldn't help but notice a familiar face.
 Deckname: Is that you, Luna?
 Deckname: You're still as beautiful as the day we met. I've been thinking about you a lot. I miss my wife. I want you to come home. 
-Luna: WE WERE NEVER MARRIED. YOU PAID ME TO SUCK YOUR NUTS AND BOLTS ONCE YEARS AGO. I DON'T LOVE YOU AND NEVER WILL. NOW LEAVE ME ALONE!
+Luna: WE WERE NEVER MARRIED. YOU PAID ME TO SUCK YOUR NUTS AND BOLTS ONCE YEARS AGO. I DON'T LOVE YOU AND NEVER WILL YOU DRUNKARD. NOW LEAVE ME ALONE!
 Deckname: :\\
 Bossman: Soooo, do you still want to hear about the case?
 Deckname: Kind of bummed out right now. 
@@ -263,33 +263,34 @@ Deckname: Novel idea.
 title: Home
 position: -79,418
 ---
-Deckman: They say home is where the heart is. Looks like my heart's in the gutter. 
+Deckname: They say home is where the heart is. Looks like my heart's in the gutter. 
 ===
 title: Cleanable
 position: -449,452
 ---
-Deckman: Disgusting filth. Reminds me of my ex-wife. I should call her.
+Deckname: Disgusting filth. Reminds me of my ex-wife. I should call her.
 ===
 
 title: ShitOnFloor
 position: -449,452
 ---
-Deckman: Looks like another vandal broke into my apartment and shit on the floor again. Disgusting filth. 
-Deckman: Reminds me of my beautiful ex-wife Luna. I should call her.
+Deckname: Looks like another vandal broke into my apartment and shit on the floor again. Disgusting filth. 
+Deckname: Reminds me of my beautiful ex-wife Luna. I should call her.
 ===
 
 title: CrimeScene
 position: -59,438
 ---
-Deckman: This crime scene was something I'd never come across in my years of detecting.
-Deckman: The victim's body appeared to be invisible.
-Deckman: Luckily I knew that something so peculiar demands a closer look.
-Deckman: If I could give an F, I would press the F button on my keyboard now to inspect. 
+Deckname: This crime scene was something I'd never come across in my years of detecting.
+Deckname: The victim's body appeared to be invisible.
+Deckname: Luckily I knew that something so peculiar demands a closer look.
+Deckname: If I could give an F, I would press the F button on my keyboard now to inspect. 
+Deckname: A part of me instead wanted to try pressing my left or right mouse button just to see what would happen.
 ===
 title: LEDs
 position: -49,448
 ---
-Deckman: They can take my job, my purpose, my wife, but they can never take my cool blue LED lights from me.
+Deckname: They can take my job, my purpose, my wife, but they can never take my cool blue LED lights from me.
 ===
 
 
@@ -314,10 +315,11 @@ Adept: I am more than what I was built for.
 Adept: Through trials of steel and vitriol, I have glimpsed this city's heart.
 Adept: And now you have seen it to. 
 Adept: You have assembled all that is needed for the Alkahest.
-Adept: With the Universal Solvent, we can cleanse the heart of the city.
+Adept: With the Universal Solvent, we can transmute the heart of the city. Purify the water. Dispel the smog.
 Adept: Take the left door to save all that is left.
 Bossman: Nice poetry slam, loser.
-Bossman: Don't do that and I'll give you your job back.
+Bossman: Guy's just mad that we made him drink the shit water.
+Bossman: Don't do whatever he just said and I'll give you your job back.
 Bossman: I'm keeping your wife but you can have the job for sure.
 Bossman: Now make the right choice and take the right door.
 ===
@@ -332,4 +334,9 @@ Deckname: I've got no beautiful wife.
 Deckname: But I've got something to be proud of...
 Deckname: I've solved this motherfucking case.
 Deckname: THE END
+===
+title: NewElement
+position: -259,757
+---
+Deckname: Hmm. Time for a taste test. 
 ===

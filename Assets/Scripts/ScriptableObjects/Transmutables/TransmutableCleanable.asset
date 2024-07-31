@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: TransmutableCleanable
   m_EditorClassIdentifier: 
   isDestroyable: 1
-  destructionNumber: 4
-  type: 0
+  destructionNumber: 3
+  startType: 0

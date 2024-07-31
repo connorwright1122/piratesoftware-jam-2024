@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.UI;
-using UnityEngine.Windows;
+//using UnityEngine.Windows;
 
 public class PlayerCombatController : MonoBehaviour
 {
@@ -68,7 +68,10 @@ public class PlayerCombatController : MonoBehaviour
 
     void Update()
     {
+        //if (_input.canMove)
+        //{
         TabCheck();
+        //}
         PrimaryCheck();
         
     }
@@ -250,7 +253,8 @@ public class PlayerCombatController : MonoBehaviour
 
     private void TabCheck()
     {
-        if (_input.inventory) 
+        
+        if (_input.inventory || Input.GetKeyDown(KeyCode.Tab))
         {
             if (_isInTab) //exit inventory
             {

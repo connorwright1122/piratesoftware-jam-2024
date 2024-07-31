@@ -11,6 +11,9 @@ public class SewerBlocker : MonoBehaviour
         flaskManager = FindObjectOfType<FlaskManager>();
         if (flaskManager != null )
         {
+            Debug.Log(flaskManager._foundGold + "g");
+            Debug.Log(flaskManager._foundSilver + "s");
+            Debug.Log(flaskManager._foundVitae + "v");
             if (flaskManager._isHidden && flaskManager._foundGold && flaskManager._foundSilver && flaskManager._foundVitae)
             {
                 this.gameObject.SetActive(false);

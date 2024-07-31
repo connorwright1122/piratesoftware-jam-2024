@@ -39,7 +39,7 @@ Material:
     - _Surface_Foam_Direction: 0.413
     - _Surface_Foam_Distortion: 0.94
     - _Surface_Foam_Tiling: 84.8
-    - _Wave_Steepness: 0.088
+    - _Wave_Steepness: 0.069
     m_Colors: []
   m_BuildTextureStacks: []
 --- !u!114 &6558234974639672788

@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: txt-apartment
   m_EditorClassIdentifier: 
   fileName: apartment.txt
-  fileText: 
-  centered: 1
+  fileText: "AUTHOR: DECKNAME\t<br> RECIPIENT: LUNA\t<br> Hello my beautiful ex-wife
+    <3 \t<br> Just wanted to mention that I moved to a new apartment. Big upgrade
+    this time! Only $3000 a month!\t<br> If you look for me, know that you are always
+    WELCOME to enter ;)\t<br> luv u lots xxxxxxxxxxx\t<br>"
+  centered: 0
