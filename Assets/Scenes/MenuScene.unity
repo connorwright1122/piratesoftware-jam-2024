@@ -3845,8 +3845,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneToLoad:
-    _sceneAsset: {fileID: 102900000, guid: 707acc8dffb72b144bb1ffbe1c965f3d, type: 3}
-    _sceneName: Playground
+    _sceneAsset: {fileID: 102900000, guid: 356ffc853ba79fb41b5f05c70eeb4928, type: 3}
+    _sceneName: Intro-Office
 --- !u!4 &629617514
 Transform:
   m_ObjectHideFlags: 0

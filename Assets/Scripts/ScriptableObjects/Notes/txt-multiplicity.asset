@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90605aedb2a56804aa5d3b5a9517eac6, type: 3}
+  m_Name: txt-multiplicity
+  m_EditorClassIdentifier: 
+  fileName: multiplicity.txt
+  fileText: "AUTHOR: ADEPT\t<br> To harness the full essence of alchemical power,
+    remember this: \t<br> a single drop can stir the pot, but many drops forge the
+    storm. \t<br> Seek the unity in multiplicity, where each element intertwines
+    to amplify its force.\t<br>"
+  centered: 0

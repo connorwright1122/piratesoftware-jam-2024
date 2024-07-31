@@ -187,7 +187,6 @@ Deckname: All that was left were my apartment and a mounting tab.
 Deckname: In my haze, I'd forgotten the location the one sanctuary I had left. 
 Deckname: When guidance seemed lost, I knew my only beacon was that metaphorical TAB button.
 Deckname: And now was the time to hit that TAB button. 
-Deckname: But I should not hit that TAB button when given options in dialogue, because of unforeseen bugs. 
 Deckname: Looking at my TAB, I realized that the bossman had already handed me the case file. And with it, a glimmer of direction. 
 Deckname: I could only say one thing after that...
 Deckname: I am a detective: a detector of I'ves. And I've got a resolution- I've got to get my job back. And I've got to solve this case.
@@ -200,6 +199,9 @@ Deckname: Once, I could stare into a warm robot's eyes and place an order with a
 Deckname: The burger's the same, but the toppings of the soul's gone missing.
 Screen: I can understand you, asshole. Just doing my job. 
 Deckname: My bad. 
+Deckname: Heard anything about a killer alchemist?
+Screen: I mean we do some crazy shit in the back sometimes. And it usually looks like someone died in the bathroom. 
+Screen: That why we have the red lights on lol. 
 ===
 
 title: McHermeticasBathroom
@@ -212,7 +214,10 @@ Bathroom: I'VE ALREADY DESTROYED THE TOILET IN THE STALL NEXT TO ME. LIKE PHYSIC
 Bathroom: I'M NOT TRYING TO BE FUNNY. I'M IN GENUINE PAIN. 
 Bathroom: JUST CLEAN UP MY MESS PLEASE. IF THEY SEE IT THEY'LL FIRE ME. THIS IS MY EVERYTHING. 
 Bathroom: MY HANDS ARE SPATULAS I GENUINELY CAN'T WORK ANYWHERE ELSE. 
-Deckname: I'll do the dirty work for you. 
+Deckname: I'll do the dirty work for you. I just need a solution. 
+Bathroom: DON'T WE ALL!!! ALCOHOL IS MINE!!!
+Deckname: In that case, you're not spewing shit. 
+Bathroom: HAHAHAHAHAHA! AAAAAAAAAAAAAAHHHHHHHHHH! 
 ===
 title: KelpFarmer
 position: -79,418
@@ -237,7 +242,9 @@ Deckname: :\\
 Bossman: Soooo, do you still want to hear about the case?
 Deckname: Kind of bummed out right now. 
 Bossman: Well, ADEPT is trying to forge the Alkahest, the Universal Solvent.
-Deckname: Okay. I'm gonna go now. 
+Deckname: I thought I was the Universal Solvent until you took that from me too. 
+Bossman: Just take the Silver extract on the nightstand too. Mind the lube though.
+Deckname: :\\
 ===
 
 title: RedlightAd
@@ -245,17 +252,38 @@ position: -161,606
 ---
 Ad: Hello, handsome.
 Ad: You look lonely. 
-Deckname: I lost my job, I just found out my wife never loved me, and now my ex-boss is screwing my ex-wife. 
+Deckname: I lost my job which I thought was my only calling in life and I'm afraid to admit that the only person I've ever loved wants nothing to do with me anymore.
 Ad: Oh. 
 Ad: I don't think I can fix that. 
 Deckname: Will you show me what love is in a city built around a heart of darkness?
-Ad: Sorry i don't date jobless people. 
-Ad: Just try to focus on yourself. 
+Ad: Sorry i don't date unemployed people. 
+Ad: Just try to focus on yourself?
 Ad: Write some poetry or something. 
-Deckname: 
+Deckname: Novel idea. 
 ===
 title: Home
 position: -79,418
 ---
 Deckman: They say home is where the heart is. Looks like my heart's in the gutter. 
+===
+title: Cleanable
+position: -449,452
+---
+Deckman: Disgusting filth. Reminds me of my ex-wife. I should call her.
+===
+
+title: ShitOnFloor
+position: -449,452
+---
+Deckman: Looks like another vandal broke into my apartment and shit on the floor again. Disgusting filth. 
+Deckman: Reminds me of my beautiful ex-wife Luna. I should call her.
+===
+
+title: CrimeScene
+position: -59,438
+---
+Deckman: This crime scene was something I'd never come across in my years of detecting.
+Deckman: The victim's body appeared to be invisible.
+Deckman: Luckily I knew that something so peculiar demands a closer look.
+Deckman: If I could give an F, I would press the F button on my keyboard now to inspect. 
 ===

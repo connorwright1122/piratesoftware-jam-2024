@@ -10,7 +10,11 @@ public class InteractableDoor : MonoBehaviour, I_Interactable
         One,
         Two,
         Three,
-        Four
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight
     }
     
     public bool _canInteract { get; set; }
