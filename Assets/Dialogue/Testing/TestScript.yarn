@@ -196,7 +196,7 @@ Deckname: I am a detective: a detector of I'ves. And I've got a resolution- I've
 title: McHermeticasOrder
 position: 174,700
 ---
-Deckname: Once, I could stare into a warm conscriptually designed robot's eyes and place an order with a smile. Now, I stand here ordering a burger from a cold, unfeeling screen. 
+Deckname: Once, I could stare into a warm robot's eyes and place an order with a smile. Now, I stand here ordering a burger from a cold, unfeeling screen. 
 Deckname: The burger's the same, but the toppings of the soul's gone missing.
 Screen: I can understand you, asshole. Just doing my job. 
 Deckname: My bad. 
@@ -212,6 +212,7 @@ Bathroom: I'VE ALREADY DESTROYED THE TOILET IN THE STALL NEXT TO ME. LIKE PHYSIC
 Bathroom: I'M NOT TRYING TO BE FUNNY. I'M IN GENUINE PAIN. 
 Bathroom: JUST CLEAN UP MY MESS PLEASE. IF THEY SEE IT THEY'LL FIRE ME. THIS IS MY EVERYTHING. 
 Bathroom: MY HANDS ARE SPATULAS I GENUINELY CAN'T WORK ANYWHERE ELSE. 
+Deckname: I'll do the dirty work for you. 
 ===
 title: KelpFarmer
 position: -79,418
@@ -219,4 +220,42 @@ position: -79,418
 Deckname: I see.
 Deckname: Is this an allegory for weed?
 
+===
+title: RedlightInn
+position: -161,606
+---
+Deckname: Well, if it isn't the twist of the century. I didn't expect to find you here, bossman.
+Boss: Deckname. What the hell are you doing here?
+Deckname: I came looking for answers, but I didn't think I'd find a soap opera in full swing.
+Deckname: Tell me what you know about the case and I'll just maybe not throw you behind metal bars. 
+Luna: GET THE FUCK OUT DECKNAME.
+Deckname: In the corner of my eye, I couldn't help but notice a familiar face.
+Deckname: Is that you, Luna?
+Deckname: You're still as beautiful as the day we met. I've been thinking about you a lot. I miss my wife. I want you to come home. 
+Luna: WE WERE NEVER MARRIED. YOU PAID ME TO SUCK YOUR NUTS AND BOLTS ONCE YEARS AGO. I DON'T LOVE YOU AND NEVER WILL. NOW LEAVE ME ALONE!
+Deckname: :\\
+Bossman: Soooo, do you still want to hear about the case?
+Deckname: Kind of bummed out right now. 
+Bossman: Well, ADEPT is trying to forge the Alkahest, the Universal Solvent.
+Deckname: Okay. I'm gonna go now. 
+===
+
+title: RedlightAd
+position: -161,606
+---
+Ad: Hello, handsome.
+Ad: You look lonely. 
+Deckname: I lost my job, I just found out my wife never loved me, and now my ex-boss is screwing my ex-wife. 
+Ad: Oh. 
+Ad: I don't think I can fix that. 
+Deckname: Will you show me what love is in a city built around a heart of darkness?
+Ad: Sorry i don't date jobless people. 
+Ad: Just try to focus on yourself. 
+Ad: Write some poetry or something. 
+Deckname: 
+===
+title: Home
+position: -79,418
+---
+Deckman: They say home is where the heart is. Looks like my heart's in the gutter. 
 ===

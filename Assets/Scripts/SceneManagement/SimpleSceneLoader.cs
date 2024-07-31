@@ -51,6 +51,8 @@ public class SimpleSceneLoader : MonoBehaviour
 
     public void StartGame()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        
         SwapSceneFromButtonUse(_sceneToLoad);
         Debug.Log("Swapping to scene");
     }
