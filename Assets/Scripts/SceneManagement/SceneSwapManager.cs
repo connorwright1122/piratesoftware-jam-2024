@@ -34,7 +34,7 @@ public class SceneSwapManager : MonoBehaviour
         _playerFPSController = _player.GetComponent<FirstPersonController>();
 
         //SceneFadeManager.Instance.InstantFadeOut();
-        SceneFadeManager.Instance.StartFadeIn();
+        //SceneFadeManager.Instance.StartFadeIn();
     }
 
     private void OnEnable()
@@ -121,9 +121,9 @@ public class SceneSwapManager : MonoBehaviour
 
     private void CalculateSpawnPosition()
     {
-        float colliderHeight = _playerCollider.bounds.extents.y;
+        //float colliderHeight = _playerCollider.bounds.extents.y;
         //_playerSpawnPosition = _doorCollider.transform.position - new Vector3(0f, colliderHeight, 1f);
-        _playerSpawnPosition = _doorTransform.position - new Vector3(0f, colliderHeight, 1f);
+        _playerSpawnPosition = _doorTransform.position - new Vector3(0f, 0f, 1f);
         //Debug.Log(_playerSpawnPosition);
     }
 }

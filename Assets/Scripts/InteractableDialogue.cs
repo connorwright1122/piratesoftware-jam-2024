@@ -12,11 +12,14 @@ public class InteractableDialogue : MonoBehaviour, I_Interactable
     private void Start()
     {
         _dialogueRunner = FindObjectOfType<DialogueRunner>();
+        Debug.Log(_dialogueRunner);
     }
 
     public void Interact()
     {
+        
         _dialogueRunner.StartDialogue(_startNode);
+        Debug.Log("Interacted");
         //throw new System.NotImplementedException();
     }
 

@@ -1,6 +1,6 @@
 ﻿title: Start
 tags: 
-position: -17,-22
+position: -79,418
 ---
 Deckname: I am a detective: a detector of I'ves. And I've got an idea- I've got to solve this case. #line:detective-1-e-2 // dubious 
     -> Hi, where am I? 
@@ -13,14 +13,14 @@ Deckname: I am a detective: a detector of I'ves. And I've got an idea- I've got 
 
 title: Oh
 tags: 
-position: -16,218
+position: -178,222
 ---
 Narrator: Yeah, fun, right?  
 ===
 
 title: Unity
 tags: 
-position: 249,43
+position: 199,186
 ---
 Narrator: Someone read the Beginner's Guide! 
 ===
@@ -40,13 +40,14 @@ Fisherman: Another one of you robots were talking about bringing change to the c
 
 ===
 title: NewNote
-position: 537,249
+position: 677,409
 ---
 Deckname: Note taken.
 ===
 title: CellsInterlinked
 position: 237,393
 ---
+Boss: Turn around, Deckman. 
 Boss: Initializing Company Loyalty Test. 
 -> Press enter to confirm dialogue.
 Boss: Who are you?
@@ -76,15 +77,18 @@ Deckname: Interconnected.
 
 
 Boss: Welcome home Detective Deckname. You've can't solve a case without fucking it up, but at least you can do the bare minimum and pass that.
+-> Thanks.
 Deckname: Your kindness is a gentle ripple in the ocean of my gratitude, Bossman.
 Boss: Shut the fuck up, Deckman. We have a new case for you. An alchemist at Hermetica Labs was killed outside of a McHermetica's. The killer left a manifesto. Adding it to your notes now. 
--> Press tab to view notes.
 Boss: Incredibly basic plot setup. You get the deal. Are you up for it?
+-> Yes.
 Deckname: I am a detective: a detector of I'ves. And I've got a premonition- I've got to solve this case.
 Boss: I swear to god Deckman, are you drinking on the job again?
+-> No.
 Deckname: To drink is to silence the cries within-side you. 
 Boss: If you pull one more bullshit philosophical quote out of your ass I'm firing you immediately.
-Deckname: But to speak is to cry from the silence without-side you. 
+-> Definitely won't.
+Deckname: ...but to speak is to cry from the silence without-side you. 
 Boss: You're fired. Effective immediately. I'm taking over the case myself. Leave the building and don't come back.
 Deckman: What.
 Boss: Get the fuck out before I throw you out the god damn window!
@@ -160,11 +164,59 @@ Luna: How the fuck did you get this number?
 Deckman: I am a detective: a detector of I'ves. And I've got to know how my beautiful ex-wife is doing.
 Luna: Don't call me that. And don't call me at work. And don't ever call me again. 
 Phone: ...
-Deckman: Chasing her was like trying to catch smog in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
+Deckman: Chasing her was like trying to catch a shadow in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
 <<jump TelephonePrompt>>
 ===
 title: HangInThere
 position: 847,-321
 ---
 Deckman: Staring at that cat poster, I saw myself in those desperate, dangling claws clinging to hope in a world that's just a tad too slick with shadows.
+===
+title: IntroMonologue
+position: 810,132
+---
+Deckname: I looked over my city, seeing nothing a sea of smog. There's something beautiful about it. 
+<<jump CellsInterlinked>>
+===
+
+title: StreetStart
+position: 398,786
+---
+Deckname: The bossman had stripped me bare-took my job, my passion, my very reason for breathing in this smog-choked city.
+Deckname: All that was left were my apartment and a mounting tab.
+Deckname: In my haze, I'd forgotten the location the one sanctuary I had left. 
+Deckname: When guidance seemed lost, I knew my only beacon was that metaphorical TAB button.
+Deckname: And now was the time to hit that TAB button. 
+Deckname: But I should not hit that TAB button when given options in dialogue, because of unforeseen bugs. 
+Deckname: Looking at my TAB, I realized that the bossman had already handed me the case file. And with it, a glimmer of direction. 
+Deckname: I could only say one thing after that...
+Deckname: I am a detective: a detector of I'ves. And I've got a resolution- I've got to get my job back. And I've got to solve this case.
+===
+
+title: McHermeticasOrder
+position: 174,700
+---
+Deckname: Once, I could stare into a warm conscriptually designed robot's eyes and place an order with a smile. Now, I stand here ordering a burger from a cold, unfeeling screen. 
+Deckname: The burger's the same, but the toppings of the soul's gone missing.
+Screen: I can understand you, asshole. Just doing my job. 
+Deckname: My bad. 
+===
+
+title: McHermeticasBathroom
+position: 393,622
+---
+Bathroom: AAAAAAAAAAAAAAHHHHHHHHHH! HELP ME! 
+Bathroom: I'M SHITTING ALL OVER THE PLACE.
+Bathroom: IT WON'T STOP.
+Bathroom: I'VE ALREADY DESTROYED THE TOILET IN THE STALL NEXT TO ME. LIKE PHYSICALLY. IT'S GONE. IT'S NOT THERE ANYMORE.
+Bathroom: I'M NOT TRYING TO BE FUNNY. I'M IN GENUINE PAIN. 
+Bathroom: JUST CLEAN UP MY MESS PLEASE. IF THEY SEE IT THEY'LL FIRE ME. THIS IS MY EVERYTHING. 
+Bathroom: MY HANDS ARE SPATULAS I GENUINELY CAN'T WORK ANYWHERE ELSE. 
+===
+title: KelpFarmer
+position: -79,418
+---
+Deckname: I see.
+Deckname: Is this an allegory for weed?
+
 ===

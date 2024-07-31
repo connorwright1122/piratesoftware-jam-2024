@@ -3,7 +3,7 @@ using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Windows;
+//using UnityEngine.Windows;
 
 public class Detector : MonoBehaviour
 {
@@ -40,6 +40,16 @@ public class Detector : MonoBehaviour
         DetectItem();
         UpdateSlider();
 
+        /*
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Interact button");
+            _input.interact = true;
+        } else
+        {
+            _input.interact = false;
+        }
+        */
     }
 
     void DetectItem()
@@ -47,12 +57,17 @@ public class Detector : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, maxDistance))
         {
+            //Debug.Log(hit.transform.gameObject.name);
             I_Interactable interactable = hit.collider.GetComponent<I_Interactable>();
+            //Debug.Log(interactable);
             if (interactable != null)
             {
                 objectDetected = true;
-                if (objectDetected && _input.interact)
+                //Debug.Log(_input.interact);
+                if (objectDetected && Input.GetKeyDown(KeyCode.E))
+                //if (objectDetected && _input.interact)
                 {
+                    //Debug.Log(_input.interact);
                     interactable.Interact();
                 }
                 _input.interact = false;

@@ -64,6 +64,13 @@ namespace StarterAssets
         public void SetCanMove(bool value)
         {
             canMove = value;
+            //SetCursorVisible(value);
+        }
+
+        public void SetCursorVisible(bool value)
+        {
+            SetCursorState(value);
+            Cursor.visible = !value;
         }
 
 #if ENABLE_INPUT_SYSTEM
@@ -164,7 +171,10 @@ namespace StarterAssets
 
         private void InventoryInput(bool newInventoryState)
         {
-            inventory = newInventoryState;
+            if (canMove)
+            {
+                inventory = newInventoryState;
+            }
         }
 
         private void InteractInput(bool newState)
