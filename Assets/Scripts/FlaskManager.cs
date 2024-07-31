@@ -24,7 +24,7 @@ public class FlaskManager : MonoBehaviour
     private Color _defaultGlassColor;
     private Color _hiddenGlassColor;
 
-    private bool _isHidden;
+    public bool _isHidden;
 
     public TMP_Dropdown _flaskDropdown1;
     public TMP_Dropdown _flaskDropdown2;
@@ -177,13 +177,13 @@ public class FlaskManager : MonoBehaviour
                     _characterController.DecreaseGravityMultiplier();
                 }
                 break;
-            case 3: // fire - phosphorus
+            case 4: // fire - phosphorus
                 if (_foundPhosphorus)
                 {
                     _characterController.IncreaseSpeedMultiplier();
                 }
                 break;
-            case 4: // water - vitae
+            case 3: // water - vitae
                 if (_foundVitae)
                 {
                     _characterController.IncreaseJumpMultiplier();
@@ -211,13 +211,13 @@ public class FlaskManager : MonoBehaviour
                     _characterController.DecreaseGravityMultiplier();
                 }
                 break;
-            case 3: // fire - phosphorus
+            case 4: // fire - phosphorus
                 if (_foundPhosphorus)
                 {
                     _characterController.IncreaseSpeedMultiplier();
                 }
                 break;
-            case 4: // water - vitae
+            case 3: // water - vitae
                 if (_foundVitae)
                 {
                     _characterController.IncreaseJumpMultiplier();
@@ -262,15 +262,15 @@ public class FlaskManager : MonoBehaviour
                 _flaskDropdown1.options[2].image = elementSprites[1];
                 _flaskDropdown2.options[2].image = elementSprites[1];
                 break;
-            case (3):
-                _foundVitae = true;
-                _flaskDropdown1.options[3].image = elementSprites[2];
-                _flaskDropdown2.options[3].image = elementSprites[2];
-                break;
             case (4):
                 _foundVitae = true;
-                _flaskDropdown1.options[4].image = elementSprites[3];
-                _flaskDropdown2.options[4].image = elementSprites[3];
+                _flaskDropdown1.options[4].image = elementSprites[2];
+                _flaskDropdown2.options[4].image = elementSprites[2];
+                break;
+            case (3):
+                _foundVitae = true;
+                _flaskDropdown1.options[3].image = elementSprites[3];
+                _flaskDropdown2.options[3].image = elementSprites[3];
                 break;
         }
     }

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90605aedb2a56804aa5d3b5a9517eac6, type: 3}
+  m_Name: txt-silver
+  m_EditorClassIdentifier: 
+  fileName: silver.txt
+  fileText: "AUTHOR: ADEPT\t<br> Beneath the crimson gaze of the wrathful blood moon,
+    where shadows gather thrice daily, SILVER lies in wait. \t<br> Seek the bottom
+    of the red light's loving embrace to uncover its hidden truth. \t<br> With this
+    silver, you may defy gravity and slip into the unseen: a ghost among the stars.\t<br>"
+  centered: 0

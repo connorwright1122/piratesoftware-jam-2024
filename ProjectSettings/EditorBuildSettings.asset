@@ -20,4 +20,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Street.unity
     guid: 3361e359540fb7842aabff656061f042
+  - enabled: 1
+    path: Assets/Scenes/Redlight.unity
+    guid: 55dc1d356b274eb428571f7ce93981a4
+  - enabled: 1
+    path: Assets/Scenes/Sewer.unity
+    guid: 0588d1590a89ba547853616bd9ebbd02
+  - enabled: 1
+    path: Assets/Scenes/McHermetica.unity
+    guid: b196e86e6d5ba2d4f8300dc6840b19f8
+  - enabled: 1
+    path: Assets/Scenes/Rooftop.unity
+    guid: b183112f8c21b7148a6886ed7508aadb
+  - enabled: 1
+    path: Assets/Scenes/Apartment.unity
+    guid: a0e2ac356d2fc3f4490efe6116905bc4
+  - enabled: 1
+    path: Assets/Scenes/Ending.unity
+    guid: 26fb44ae777823b48a4126e44ebeabca
   m_configObjects: {}

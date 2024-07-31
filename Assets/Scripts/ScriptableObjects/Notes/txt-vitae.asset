@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90605aedb2a56804aa5d3b5a9517eac6, type: 3}
+  m_Name: txt-vitae
+  m_EditorClassIdentifier: 
+  fileName: vitae.txt
+  fileText: "AUTHOR: ADEPT\t<br> In the refuge where one finds nightly peace, the
+    essence of renewal, VITAE, awaits.\t<br> Seek the cool breath of preservation
+    that enables one to drown their sorrows tomorrow.\t<br> Then one's mind may be
+    quickened and the city's filthy essence be cleansed.\t<br>"
+  centered: 0

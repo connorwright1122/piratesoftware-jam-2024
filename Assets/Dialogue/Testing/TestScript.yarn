@@ -36,7 +36,7 @@ Fisherman: I fish where I am, and I fish where I swam.
         Deckname: You swam in this filth?
         Fisherman: Decades ago. Before everything went to shit. 
 Fisherman: This city used to be a beautiful place. Then Hermetica Solutions bought the whole damn thing. And that big dam thing over there.
-Fisherman: Another one of you robots were talking about bringing change to the city. Then he started swimming in the shit water towards that building so I'm assuming he's dead now. 
+Fisherman: Another one of you robots were talking about bringing change to the city. Then he started swimming in the shit water towards that sewer so I'm assuming he's dead now. 
 
 ===
 title: NewNote
@@ -165,7 +165,6 @@ Deckman: I am a detective: a detector of I'ves. And I've got to know how my beau
 Luna: Don't call me that. And don't call me at work. And don't ever call me again. 
 Phone: ...
 Deckman: Chasing her was like trying to catch a shadow in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
-<<jump TelephonePrompt>>
 ===
 title: HangInThere
 position: 847,-321
@@ -175,7 +174,6 @@ Deckman: Staring at that cat poster, I saw myself in those desperate, dangling c
 title: IntroMonologue
 position: 810,132
 ---
-Deckname: I looked over my city, seeing nothing a sea of smog. There's something beautiful about it. 
 <<jump CellsInterlinked>>
 ===
 
@@ -184,7 +182,6 @@ position: 398,786
 ---
 Deckname: The bossman had stripped me bare-took my job, my passion, my very reason for breathing in this smog-choked city.
 Deckname: All that was left were my apartment and a mounting tab.
-Deckname: In my haze, I'd forgotten the location the one sanctuary I had left. 
 Deckname: When guidance seemed lost, I knew my only beacon was that metaphorical TAB button.
 Deckname: And now was the time to hit that TAB button. 
 Deckname: Looking at my TAB, I realized that the bossman had already handed me the case file. And with it, a glimmer of direction. 
@@ -257,8 +254,10 @@ Ad: Oh.
 Ad: I don't think I can fix that. 
 Deckname: Will you show me what love is in a city built around a heart of darkness?
 Ad: Sorry i don't date unemployed people. 
-Ad: Just try to focus on yourself?
-Ad: Write some poetry or something. 
+Ad: Just try to focus on yourself? It's just a job.
+Deckname: You don't understand. My actual name is PRV8-D3C\#
+Ad: They named you Perv Dickname??
+Ad: That sucks. You should probably just go vent and write some slam poetry about it or something. Hell of a pen name. 
 Deckname: Novel idea. 
 ===
 title: Home
@@ -286,4 +285,51 @@ Deckman: This crime scene was something I'd never come across in my years of det
 Deckman: The victim's body appeared to be invisible.
 Deckman: Luckily I knew that something so peculiar demands a closer look.
 Deckman: If I could give an F, I would press the F button on my keyboard now to inspect. 
+===
+title: LEDs
+position: -49,448
+---
+Deckman: They can take my job, my purpose, my wife, but they can never take my cool blue LED lights from me.
+===
+
+
+title: FinaleEvil
+position: -39,458
+---
+Deckname: I am Detective Deckname.
+Deckname: I am a detective: a detector of I'ves.
+Deckname: I've got a penchant for saying poetic nonsense. 
+Deckname: I've got a shitty apartment.
+Deckname: I've got no beautiful wife.
+Deckname: But I've got something to be proud of...
+Deckname: I've got my motherfucking job back.
+Deckname: THE END
+===
+title: SewerConvo
+position: -29,468
+---
+Adept: I am ADEPT.
+Adept: I am Alchemical Dependence Expendable Proto-Test Subject - 1.
+Adept: I am more than what I was built for.
+Adept: Through trials of steel and vitriol, I have glimpsed this city's heart.
+Adept: And now you have seen it to. 
+Adept: You have assembled all that is needed for the Alkahest.
+Adept: With the Universal Solvent, we can cleanse the heart of the city.
+Adept: Take the left door to save all that is left.
+Bossman: Nice poetry slam, loser.
+Bossman: Don't do that and I'll give you your job back.
+Bossman: I'm keeping your wife but you can have the job for sure.
+Bossman: Now make the right choice and take the right door.
+===
+title: FinaleGood
+position: -29,468
+---
+Deckname: I am Detective Deckname.
+Deckname: I am a detective: a detector of I'ves.
+Deckname: I've got a penchant for saying poetic nonsense. 
+Deckname: I've got a shitty apartment.
+Deckname: I've got no beautiful wife.
+Deckname: But I've got something to be proud of...
+Deckname: I've solved this motherfucking case.
+Deckname: THE END
 ===
