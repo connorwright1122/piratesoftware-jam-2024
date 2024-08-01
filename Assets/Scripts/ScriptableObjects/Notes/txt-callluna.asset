@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: txt-callluna
   m_EditorClassIdentifier: 
   fileName: wifey.txt
-  fileText: I called my beautiful ex-wife Luna and she's doing well! She's working
-    at the Hermetica Red Light Inn. I should surprise her at work if I can find the
-    place!
+  fileText: 'AUTHOR: DECKNAME<br>I called my beautiful ex-wife Luna and she''s doing
+    well! She''s working at the Hermetica Red Light Inn. I should surprise her at
+    work if I can find the place!'
   centered: 0

@@ -39,11 +39,11 @@ public class ParticleTransmuter : MonoBehaviour
         Debug.Log("particle collided");
         soundPlayer.PlaySoundFXClip(soundPlayer.soundFXClips[2], this.transform, 1);
 
-        if (_flaskManager.getFlaskAttribute1() == 2 || _flaskManager.getFlaskAttribute2() == 2)
+        if ((_flaskManager.getFlaskAttribute1() == 2 || _flaskManager.getFlaskAttribute2() == 2) && _flaskManager._foundSilver)
         {
             _flaskManager.StartInvisibility();
         }
-        if (_flaskManager.getFlaskAttribute1() == 3 || _flaskManager.getFlaskAttribute2() == 3)
+        if ((_flaskManager.getFlaskAttribute1() == 3 || _flaskManager.getFlaskAttribute2() == 3) && _flaskManager._foundGold)
         {
             _flaskManager.StartIR();
         }
@@ -54,9 +54,10 @@ public class ParticleTransmuter : MonoBehaviour
             int att1 = _flaskManager.getFlaskAttribute1();
             int att2 = _flaskManager.getFlaskAttribute2();
 
+            //if (_flaskManager.)
             if (transmutable.IsDestroyable())
             {
-                if (att1 == transmutable.GetDestructionNumber() || att2 == transmutable.GetDestructionNumber())
+                if ((att1 == transmutable.GetDestructionNumber() || att2 == transmutable.GetDestructionNumber()) && _flaskManager._foundVitae)
                 {
                     transmutable.InitiateAction();
                 }
