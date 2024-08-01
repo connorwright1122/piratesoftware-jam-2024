@@ -47,7 +47,7 @@ Deckname: Note taken. #line:00bf0bb
 title: CellsInterlinked
 position: 237,393
 ---
-//Boss: Turn around, Deckname.  #line:04627f //6 
+Boss: Turn around, Deckname.  //#line:04627f //6 
 Boss: Initializing Company Loyalty Test.  #line:06d375a 
 -> Press enter to confirm dialogue. //#line:03d2be5 
 Boss: Who are you? #line:03e3892 
@@ -71,9 +71,9 @@ Deckname: Interconnected. #line:0337e1d
 Boss:  Last night I made hot sweaty love to your ex-wife, Luna. Interconnected.  #line:05e12f2 
 -> Interconnected. //#line:03a760a 
 Deckname: Interconnected. #line:0f63d08 
-Boss: Just wanted to get that off my chest. Interconnected. #line:06b79cf 
--> Interconnected. //#line:0cb0192 
-Deckname: Interconnected. #line:05180b5 
+//Boss: Just wanted to get that off my chest. Interconnected. #line:06b79cf 
+//-> Interconnected. //#line:0cb0192 
+//Deckname: Interconnected. #line:05180b5 
 
 
 Boss: Welcome home Detective Deckname. You've can't solve a case without fucking it up, but at least you can do the bare minimum and pass that. #line:0bb2280 
@@ -251,7 +251,7 @@ Deckname: Will you show me what love is in a city built around a heart of darkne
 Ad: Try to focus on yourself first? It's just a job. #line:04f43a3 
 Deckname: You don't understand. My actual name is PRV8-DCNM #line:0464fe4 
 Ad: They named you Perv Dickname?? #line:04acbbe 
-Ad: That sucks. You should probably just go vent and write some slam poetry about it or something.  #line:0d8d18c 
+Ad: That sucks. You should probably just go vent and write some slam poetry about it or something.  //#line:0d8d18c 
 Deckname: What a novel idea.  #line:07860dd 
 ===
 title: Home

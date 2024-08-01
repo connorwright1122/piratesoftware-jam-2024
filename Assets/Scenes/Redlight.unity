@@ -14608,7 +14608,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 519313578}
+  m_Mesh: {fileID: 501939472}
 --- !u!33 &906815125
 MeshFilter:
   m_ObjectHideFlags: 10
@@ -16478,7 +16478,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8127
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -17488,6 +17488,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_InnerSpotAngle
       value: 42.129128
+      objectReference: {fileID: 0}
+    - target: {fileID: 3846991965443843724, guid: 90d25920a65f62146a593d2d706a0606,
+        type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 8127
       objectReference: {fileID: 0}
     - target: {fileID: 3956570026313506010, guid: 90d25920a65f62146a593d2d706a0606,
         type: 3}
@@ -21652,7 +21657,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8127
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0

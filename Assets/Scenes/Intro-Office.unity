@@ -30846,7 +30846,7 @@ Light:
   m_RenderMode: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 8127
   m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
@@ -68098,10 +68098,20 @@ PrefabInstance:
       propertyPath: m_SlopeLimit
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 3485920792833666339, guid: 269831e569c492148877f7ee8f9df576,
+        type: 3}
+      propertyPath: MoveSpeed
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3485920792833666339, guid: 269831e569c492148877f7ee8f9df576,
+        type: 3}
+      propertyPath: SprintSpeed
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3703764517149608452, guid: 269831e569c492148877f7ee8f9df576,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 3447989.8
+      value: 3580537.8
       objectReference: {fileID: 0}
     - target: {fileID: 3908712073930648621, guid: 269831e569c492148877f7ee8f9df576,
         type: 3}
