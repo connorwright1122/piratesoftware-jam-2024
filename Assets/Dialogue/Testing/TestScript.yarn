@@ -3,11 +3,11 @@ tags:
 position: -79,418
 ---
 Deckname: I am a detective: a detector of I'ves. And I've got an idea- I've got to solve this case. #line:detective-1-e-2 // dubious 
-    -> Hi, where am I? 
-        Narrator: You're in Unity! 
-            -> Oh. 
+    -> Hi, where am I?  #line:051a2b2 
+        Narrator: You're in Unity!  #line:00fbfb5 
+            -> Oh.  #line:00c8b50 
                 <<jump Oh>>
-            -> How did I get here? 
+            -> How did I get here?  #line:0afbf4c 
                 <<jump Unity>>
 ===
 
@@ -15,161 +15,159 @@ title: Oh
 tags: 
 position: -178,222
 ---
-Narrator: Yeah, fun, right?  
+Narrator: Yeah, fun, right?   #line:0ab0a0c 
 ===
 
 title: Unity
 tags: 
 position: 199,186
 ---
-Narrator: Someone read the Beginner's Guide! 
+Narrator: Someone read the Beginner's Guide!  #line:02499ba 
 ===
 title: Fisherman
 position: 223,-166
 ---
-Deckname: Fisherman, fisher of men. Give this man a fish of wisdom so that he may think for a day. //#line:detective-1-e-2 // dubious 
-Fisherman: I fish where I am, and I fish where I swam.
-    -> Catch anything?
-        Deckname: Catch anything?
-        Fisherman: The water used to have crappie. Now it's just full of crap and pee. 
-    -> You swam in this filth?
-        Deckname: You swam in this filth?
-        Fisherman: Decades ago. Before everything went to shit. 
-Fisherman: This city used to be a beautiful place. Then Hermetica Solutions bought the whole damn thing. And that big dam thing over there.
-Fisherman: Another one of you robots were talking about bringing change to the city. Then he started swimming in the shit water towards that sewer so I'm assuming he's dead now. 
+Deckname: Fisherman, fisher of men. Give this man a fish of wisdom so that he may think for a day.  #line:010603d 
+Fisherman: I fish where I am, and I fish where I swam. #line:0d83be6 
+    -> Catch anything? #line:0ed1618 
+        Deckname: Catch anything? #line:0b8fb2a 
+        Fisherman: The water used to have crappie. Now it's just full of crap and pee.  #line:0cef46b 
+    -> You swam in this filth? #line:008f541 
+        Deckname: You swam in this filth? #line:00d15e8 
+        Fisherman: Decades ago. Before everything went to shit.  #line:0eba85d 
+Fisherman: This city used to be a beautiful place. Then Hermetica Solutions bought the whole damn thing. And that big dam thing over there. #line:020ba22 
+Fisherman: Another one of you robots were talking about bringing change to the city. Then he started swimming in the shit water towards that sewer so I'm assuming he's dead now.  #line:0d0b255 
 
 ===
 title: NewNote
 position: 677,409
 ---
-Deckname: Note taken.
+Deckname: Note taken. #line:00bf0bb 
 ===
 title: CellsInterlinked
 position: 237,393
 ---
-Boss: Turn around, Deckname. 
-Boss: Initializing Company Loyalty Test. 
--> Press enter to confirm dialogue.
-Boss: Who are you?
--> Detective Deckname.
-Deckname: Detective Deckname.
-Boss: Who do you work for?
--> Hermetica Solutions.
-Deckname: Hermetica Solutions.
-Boss: What is your purpose? To work. 
--> To work.
-Deckname: To work.
-Boss: What gives you meaning in life? To work. 
--> To work.
-Deckname: To work.
-Boss: At Hermetica Solutions, we are all a family. Interconnected. 
--> Interconnected.
-Deckname: Interconnected.
-Boss: What is it like to hold the hand of someone you love? Interconnected. 
--> Interconnected.
-Deckname: Interconnected.
-Boss:  Last night I made hot sweaty love to your ex-wife, Luna. Interconnected. 
--> Interconnected.
-Deckname: Interconnected.
-Boss: Just wanted to get that off my chest. Interconnected.
--> Interconnected.
-Deckname: Interconnected.
+Boss: Turn around, Deckname.  #line:04627f6 
+Boss: Initializing Company Loyalty Test.  #line:06d375a 
+-> Press enter to confirm dialogue. //#line:03d2be5 
+Boss: Who are you? #line:03e3892 
+-> Detective Deckname. //#line:02652e2 
+Deckname: Detective Deckname. #line:0289775 
+Boss: Who do you work for? #line:0ae8930 
+-> Hermetica Solutions. //#line:0e5bae1 
+Deckname: Hermetica Solutions. #line:0a5f8d2 
+Boss: What is your purpose? To work.  #line:028ad84 
+-> To work. //#line:0a32a8a 
+Deckname: To work. #line:005294d 
+Boss: What gives you meaning in life? To work.  #line:0718550 
+-> To work. //#line:0630f6d 
+Deckname: To work. #line:0835874 
+Boss: At Hermetica Solutions, we are all a family. Interconnected.  #line:058d792 
+-> Interconnected. //#line:05cb374 
+Deckname: Interconnected. #line:043d3af 
+Boss: What is it like to hold the hand of someone you love? Interconnected.  #line:0628170 
+-> Interconnected. //#line:06bdf69 
+Deckname: Interconnected. #line:0337e1d 
+Boss:  Last night I made hot sweaty love to your ex-wife, Luna. Interconnected.  #line:05e12f2 
+-> Interconnected. //#line:03a760a 
+Deckname: Interconnected. #line:0f63d08 
+Boss: Just wanted to get that off my chest. Interconnected. #line:06b79cf 
+-> Interconnected. //#line:0cb0192 
+Deckname: Interconnected. #line:05180b5 
 
 
-Boss: Welcome home Detective Deckname. You've can't solve a case without fucking it up, but at least you can do the bare minimum and pass that.
--> Thanks.
-Deckname: Your kindness is a gentle ripple in the ocean of my gratitude, Bossman.
-Boss: Shut the fuck up, Deckname. We have a new case for you. An alchemist at Hermetica Labs was killed outside of a McHermetica's. The killer left a manifesto. Adding it to your notes now. 
-Boss: Incredibly basic plot setup. You get the deal. Are you up for it?
--> Yes.
-Deckname: I am a detective: a detector of I'ves. And I've got a premonition- I've got to solve this case.
-Boss: I swear to god Deckname, are you drinking on the job again?
--> No.
-Deckname: To drink is to silence the cries within-side you. 
-Boss: If you pull one more bullshit philosophical quote out of your ass I'm firing you immediately.
--> Definitely won't.
-Deckname: ...but to speak is to cry from the silence without-side you. 
-Boss: You're fired. Effective immediately. I'm taking over the case myself. Leave the building and don't come back.
-Deckname: What.
-Boss: Get the fuck out before I throw you out the god damn window!
+Boss: Welcome home Detective Deckname. You've can't solve a case without fucking it up, but at least you can do the bare minimum and pass that. #line:0bb2280 
+-> Thanks. //#line:027ca5f 
+Deckname: Your kindness is a gentle ripple in the ocean of my gratitude, Bossman. #line:0e0e996 
+Boss: Shut the fuck up, Deckname. We have a new case for you. An alchemist at Hermetica Labs was killed outside of a McHermie's. The killer left a manifesto. Adding it to your notes now.  #line:086691f 
+Boss: Incredibly basic plot setup. You get the deal. Are you up for it? #line:0476817 
+-> Yes. //#line:006944f 
+Deckname: I am a detective: a detector of I'ves. And I've got a premonition- I've got to solve this case. #line:0203d15 
+Boss: I swear to god Deckname, are you drinking on the job again? #line:0ef892d 
+-> No. //#line:0bf713f 
+Deckname: To drink is to silence the cries within-side you.  #line:046f3de 
+Boss: If you pull one more bullshit philosophical quote out of your ass I'm firing you immediately. #line:0c171af 
+-> Definitely won't. //#line:02b4fd0 
+Deckname: ...but to speak is to cry from the silence without-side you.  #line:0e7283f 
+Boss: You're fired. Effective immediately. I'm taking over the case myself. Leave the building and don't come back. #line:05e0220 
+Deckname: What. #line:0ca046a 
+Boss: Get the fuck out before I throw you out the god damn window! #line:0051139 
 
 ===
 title: CallMark
 position: 523,-371
 ---
-Mark: Hey Deckname.
-Deckname: I got fired. 
-Mark: Damn.
-Mark: Didn't know I was talking to a jobless loser. Hahahahaha.
-Deckname: The cynic in me rejoices at your jest. 
-Mark: A robot without a job is worthless though. It's like Hermetica without the beautiful smog. Hahahahaha. 
-Mark: I bet it was all the goofy poetic shit you do. I know what will cheer you up. Let's go to a POETRY SLAM!
-Deckname: What.
-Mark: Poetry slam. It's where they spit straight fire. Makes your soul ignite. You can sit at the back with me. 
-Deckname: Maybe. 
-Mark: Well it's in the building next to the [INSERT HOLOGRAM HERE] in the Phosphor District if you want to go. 
-Mark: There's also a rooftop party at the [INSERT BUILDING HERE] if you want some sun instead. 
-Deckname: I need to check the groceries in my fridge first. 
-Mark: Okay man. Just don't embarass me. 
+Mark: Hey Deckname. #line:0fbec35 
+Deckname: I got fired.  #line:06d35b3 
+Mark: Damn. #line:0d31298 
+Mark: Didn't know I was talking to a jobless loser. Hahahahaha. #line:07b90c8 
+Deckname: The cynic in me rejoices at your jest.  #line:055ebbc 
+Mark: A robot without a job is worthless though. It's like Hermetica without the beautiful smog. Hahahahaha.  #line:04b9bf6 
+Mark: I bet it was all the goofy poetic shit you do. I know what will cheer you up. Let's go to a POETRY SLAM! #line:0b01daf 
+Deckname: What. #line:0b06274 
+Mark: Poetry slam. It's where they spit straight fire. Makes your soul ignite. You can sit at the back with me.  #line:0a7d4ad 
+Deckname: Maybe.  #line:0be38b1 
+Mark: Well it's in the building next to the [INSERT HOLOGRAM HERE] in the Phosphor District if you want to go.  #line:064d2ec 
+Mark: There's also a rooftop party at the [INSERT BUILDING HERE] if you want some sun instead.  #line:0d8729e 
+Deckname: I need to check the groceries in my fridge first.  #line:0e81504 
+Mark: Okay man. Just don't embarass me.  #line:032c14f 
 <<jump TelephonePrompt>>
 ===
 title: PartyGoer1
 position: 518,34
 ---
-Ukelele: Oh, hey man. Welcome to the party. 
-PartyGoer1: Everyone left because this dude put on his Noir Ukelele Mix.
-Ukelele: Actually, it's a Zither and it's a beautiful instrument. 
-PartyGoer1: I don't give a shit, I don't want to hear it unless I'm next to a beautiful beach in New Honolulu with my smoking hot robo babe. 
--> Hell yeah.
-    Deckname: Hell yeah. 
-    Ukelele: Hell yeah, dude. The function's over but help yourself to anything that's left. 
--> Say some poetic shit.
-    Deckname: Beauty is naught but a matter of perspective, whether in the waves of the ocean, the clouds above, or thy love begotten.
-    Ukelele: Thanks, man. You ruined the vibe. Get the fuck out of here and go to a poetry slam or something.
-PartyGoer1: Go get the stuff up off the top level of the roof too while you're at it. 
+Ukelele: Oh, hey man. Welcome to the party.  #line:046eedd 
+PartyGoer1: Everyone left because this dude put on his Noir Ukelele Mix. #line:0d2bec2 
+Ukelele: Actually, it's a Zither and it's a beautiful instrument.  #line:05b514f 
+PartyGoer1: I don't give a shit, I don't want to hear it unless I'm next to a beautiful beach in New Honolulu with my smoking hot robo babe.  #line:0d716bf 
+-> Hell yeah. //#line:0f366af 
+    Deckname: Hell yeah.  #line:0bdf082 
+    Ukelele: Hell yeah, dude. The function's over but help yourself to anything that's left.  #line:0c50f3c 
+-> Say some poetic shit. //#line:0a24465 
+    Deckname: Beauty is naught but a matter of perspective, whether in the waves of the ocean, the clouds above, or thy love begotten. #line:05bc272 
+    Ukelele: Thanks, man. You ruined the vibe. Get the fuck out of here and go to a poetry slam or something. #line:0fe94fd 
+PartyGoer1: Go get the stuff up off the top level of the roof too while you're at it.  #line:051483a 
 ===
 title: PartyTest
 position: 500,-189
 ---
-PartyGoer1: Initilializing Rooftop Party Access Test.
-PartyGoer1: Who do you work for?
--> I am unemployed.
-Deckname: I am unemployed.
-PartyGoer1: lol
-PartyGoer1: Are you sure you don't work for Hermetica Solutions? 
--> All robo cops are bastards.
-PartyGoer1: What gives you meaning in life? 
--> To party hard.
-Deckname: To party hard.
-Partygoer1: Okay, cool, you're in. 
+PartyGoer1: Initilializing Rooftop Party Access Test. #line:0738640 
+PartyGoer1: Who do you work for? #line:0c3e735 
+-> I am unemployed. //#line:011e3b3 
+Deckname: I am unemployed. #line:09b41c4 
+PartyGoer1: lol #line:01883df 
+PartyGoer1: Are you sure you don't work for Hermetica Solutions?  #line:07b5930 
+-> All robo cops are bastards. //#line:00ddd48 
+Deckname: All robo cops are bastards. #line:06979b2 
+PartyGoer1: What gives you meaning in life?  #line:05901b8 
+-> To party hard. //#line:03e89d5 
+Deckname: To party hard. #line:0890755 
+Partygoer1: Okay, cool, you're in.  #line:0986736 
 ===
 title: TelephonePrompt
 position: 470,-585
 ---
--> Call Mark.
-    Phone: ...
-    <<jump CallMark>>
--> Call Luna.
-    Phone: ...
+-> Call Luna. //#line:06f868a 
+    Phone: ... //#line:077acb0 
     <<jump CallLuna>>
--> Nevermind.
+-> Nevermind. #line:0308722 
 ===
 title: CallLuna
 position: 724,-530
 ---
-Phone: Thank you for calling Hermetica Red Light Inn. Connecting you with Luna. 
-Luna: Hello, who is this?
-Deckname: Detective Deckname.
-Luna: How the fuck did you get this number? 
-Deckname: I am a detective: a detector of I'ves. And I've got to know how my beautiful ex-wife is doing.
-Luna: Don't call me that. And don't call me at work. And don't ever call me again. 
-Phone: ...
-Deckname: Chasing her was like trying to catch a shadow in a net. But this net has a tied knot that can't be broken, and a general idea of her current location.
+Phone: Thank you for calling Hermetica Red Light Inn. Connecting you with Luna.  #line:0de9471 
+Luna: Hello, who is this? #line:0892f65 
+Deckname: Detective Deckname. #line:0a1c162 
+Luna: How the fuck did you get this number?  #line:047ca77 
+Deckname: I am a detective: a detector of I'ves. And I've got to know how my beautiful ex-wife is doing. #line:0077429 
+Luna: Don't call me that. And don't call me at work. And don't ever call me again.  #line:08cafef 
+Phone: ... #line:0000501 
+Deckname: Chasing her was like trying to catch a shadow in a net. But this net has a tied knot that can't be broken, and a general idea of her current location. #line:0eeb2ec 
 ===
 title: HangInThere
 position: 847,-321
 ---
-Deckname: Staring at that cat poster, I saw myself in those desperate, dangling claws clinging to hope in a world that's just a tad too slick with shadows.
+Deckname: Staring at that cat poster, I saw myself in those desperate, dangling claws clinging to hope in a world that's just a tad too slick with shadows and alchemy. #line:0cffe80 
 ===
 title: IntroMonologue
 position: 810,132
@@ -180,163 +178,159 @@ position: 810,132
 title: StreetStart
 position: 398,786
 ---
-Deckname: The bossman had stripped me bare-took my job, my passion, my very reason for breathing in this smog-choked city.
-Deckname: All that was left were my apartment and a mounting tab.
-Deckname: When guidance seemed lost, I knew my only beacon was that metaphorical TAB button.
-Deckname: And now was the time to hit that TAB button. 
-Deckname: Looking at my TAB, I realized that the bossman had already handed me the case file. And with it, a glimmer of direction. 
-Deckname: I could only say one thing after that...
-Deckname: I am a detective: a detector of I'ves. And I've got a resolution- I've got to get my job back. And I've got to solve this case.
+Deckname: The bossman had stripped me bare-took my job, my passion, my very reason for breathing in this smog-choked city. #line:0101180 
+Deckname: All that was left were my apartment and a mounting tab. #line:06a9b70 
+Deckname: When guidance seemed lost, I knew my only beacon was that metaphorical TAB button. #line:00c13e8 
+Deckname: And now was the time to hit that TAB button.  #line:04001fd 
+Deckname: Looking at my TAB, I realized that the bossman had already handed me the case file. And with it, a glimmer of direction.  #line:059a7d0 
+Deckname: I could only say one thing after that... #line:0117340 
+Deckname: I am a detective: a detector of I'ves. And I've got a resolution- I've got to get my job back. And I've got to solve this case. #line:0d47d9b 
 ===
 
 title: McHermeticasOrder
 position: 174,700
 ---
-Deckname: Once, I could stare into a warm robot's eyes and place an order with a smile. Now, I stand here ordering a burger from a cold, unfeeling screen. 
-Deckname: The burger's the same, but the toppings of the soul's gone missing.
-Screen: I can understand you, asshole. Just doing my job. 
-Deckname: My bad. 
-Deckname: Heard anything about a killer alchemist?
-Screen: I mean we do some crazy shit in the back sometimes. And it usually looks like someone died in the bathroom. 
-Screen: That why we have the red lights on lol. 
+Deckname: Once, I could stare into a warm robot's eyes and place an order with a smile. Now, I stand here ordering a burger from a cold, unfeeling screen.  #line:02a488d 
+Deckname: The burger's the same, but the toppings of the soul's gone missing. #line:0e2657c 
+Screen: I can understand you, asshole. Just doing my job.  #line:087b4c1 
+Deckname: My bad.  #line:09e39fb 
+Deckname: Heard anything about a killer alchemist? #line:01520af 
+Screen: I mean we do some crazy shit in the back sometimes. And it usually looks like someone died in the bathroom.  #line:08f50ce 
+Screen: That why we have the red lights on lol.  #line:042df81 
 ===
 
 title: McHermeticasBathroom
 position: 393,622
 ---
-Bathroom: AAAAAAAAAAAAAAHHHHHHHHHH! HELP ME! 
-Bathroom: I'M SHITTING ALL OVER THE PLACE.
-Bathroom: IT WON'T STOP.
-Bathroom: I'VE ALREADY DESTROYED THE TOILET IN THE STALL NEXT TO ME. LIKE PHYSICALLY. IT'S GONE. IT'S NOT THERE ANYMORE.
-Bathroom: I'M NOT TRYING TO BE FUNNY. I'M IN GENUINE PAIN. 
-Bathroom: JUST CLEAN UP MY MESS PLEASE. IF THEY SEE IT THEY'LL FIRE ME. THIS IS MY EVERYTHING. 
-Bathroom: MY HANDS ARE SPATULAS I GENUINELY CAN'T WORK ANYWHERE ELSE. 
-Deckname: I'll do the dirty work for you. I just need a solution. 
-Bathroom: DON'T WE ALL!!! ALCOHOL IS MINE!!!
-Deckname: In that case, you're not spewing shit. 
-Bathroom: HAHAHAHAHAHA! AAAAAAAAAAAAAAHHHHHHHHHH! 
+Bathroom: AAAAAAAAAAAAAAHHHHHHHHHH! HELP ME!  #line:056f5a3 
+Bathroom: I'M SHITTING ALL OVER THE PLACE.  #line:06ef8eb 
+Bathroom: IT WON'T STOP. #line:08f134b 
+Bathroom: I'VE ALREADY DESTROYED THE TOILET IN THE STALL NEXT TO ME. LIKE PHYSICALLY. IT'S GONE. IT'S NOT THERE ANYMORE. #line:0f4377a 
+Bathroom: I'M NOT TRYING TO BE FUNNY. I'M IN GENUINE PAIN.  #line:0bde787 
+Bathroom: JUST CLEAN UP MY MESS PLEASE. IF THEY SEE IT THEY'LL FIRE ME. THIS IS MY EVERYTHING.  #line:03a578c 
+Bathroom: MY HANDS ARE SPATULAS I GENUINELY CAN'T WORK ANYWHERE ELSE.  #line:00be084 
+Deckname: I'll do the dirty work for you. I just need a solution.  #line:0db81c5 
+Bathroom: DON'T WE ALL!!! ALCOHOL IS MINE!!! #line:083e025 
+Deckname: In that case, you're not spewing shit.  #line:04643d1 
+Bathroom: HAHAHAHAHAHA! AAAAAAAAAAAAAAHHHHHHHHHH!  #line:0948819 
 ===
 title: KelpFarmer
 position: -79,418
 ---
-Deckname: I see.
-Deckname: Is this an allegory for weed?
+Deckname: I see. #line:0c3aff4 
+Deckname: Is this an allegory for weed? #line:0d2930c 
 
 ===
 title: RedlightInn
 position: -161,606
 ---
-Deckname: Well, if it isn't the twist of the century. I didn't expect to find you here, bossman.
-Boss: Deckname. What the hell are you doing here?
-Deckname: I came looking for answers, but I didn't think I'd find a soap opera in full swing.
-Deckname: Tell me what you know about the case and I'll just maybe not throw you behind metal bars. 
-Luna: GET THE FUCK OUT DECKNAME.
-Deckname: In the corner of my eye, I couldn't help but notice a familiar face.
-Deckname: Is that you, Luna?
-Deckname: You're still as beautiful as the day we met. I've been thinking about you a lot. I miss my wife. I want you to come home. 
-Luna: WE WERE NEVER MARRIED. YOU PAID ME TO SUCK YOUR NUTS AND BOLTS ONCE YEARS AGO. I DON'T LOVE YOU AND NEVER WILL YOU DRUNKARD. NOW LEAVE ME ALONE!
-Deckname: :\\
-Bossman: Soooo, do you still want to hear about the case?
-Deckname: Kind of bummed out right now. 
-Bossman: Well, ADEPT is trying to forge the Alkahest, the Universal Solvent.
-Deckname: I thought I was the Universal Solvent until you took that from me too. 
-Bossman: Just take the Silver extract on the nightstand too. Mind the lube though.
-Deckname: :\\
+Deckname: Well, if it isn't the twist of the century. I didn't expect to find you here, Bossman. #line:05cd39b 
+Boss: Deckname. What the hell are you doing here? #line:0097dc3 
+Deckname: I came looking for answers, but I didn't think I'd find a soap opera in full swing. #line:06c1217 
+Deckname: Tell me what you know about the case and I'll just maybe not throw you behind metal bars.  #line:0373745 
+Luna: GET THE FUCK OUT DECKNAME. #line:011deb1 
+Deckname: In the corner of my eye, I couldn't help but notice a familiar face. #line:0ac8ed8 
+Deckname: Is that you, Luna? You're still as beautiful as the day we met. I've been thinking about you a lot. I miss my wife. I want you to come home.  #line:048855e 
+Luna: WE WERE NEVER MARRIED. YOU PAID ME TO SUCK YOUR NUTS AND BOLTS ONCE YEARS AGO. I DON'T LOVE YOU AND NEVER WILL YOU DRUNKARD. NOW LEAVE ME ALONE! #line:06b47af 
+Deckname: :\\ #line:0a341d8 
+Bossman: Soooo, do you still want to hear about the case? #line:05d65c9 
+Deckname: Kind of bummed out right now.  #line:018ffbb 
+Bossman: Well, ADEPT is trying to forge the Alkahest, the Universal Solvent. #line:0e4e204 
+Deckname: I thought I was the Universal Solvent until you took that from me too.  #line:0779415 
+Bossman: Just take the Silver extract on the nightstand too. Mind the lube though. #line:0c3e99b 
+Deckname: :\\ #line:025283d 
 ===
 
 title: RedlightAd
 position: -161,606
 ---
-Ad: Hello, handsome.
-Ad: You look lonely. 
-Deckname: I lost my job which I thought was my only calling in life and I'm afraid to admit that the only person I've ever loved wants nothing to do with me anymore.
-Ad: Oh. 
-Ad: I don't think I can fix that. 
-Deckname: Will you show me what love is in a city built around a heart of darkness?
-Ad: Sorry i don't date unemployed people. 
-Ad: Just try to focus on yourself? It's just a job.
-Deckname: You don't understand. My actual name is PRV8-D3C\#
-Ad: They named you Perv Dickname??
-Ad: That sucks. You should probably just go vent and write some slam poetry about it or something. Hell of a pen name. 
-Deckname: Novel idea. 
+Ad: Hello, handsome. You look lonely. #line:0192f7d 
+Deckname: I lost my job which I thought was my only calling in life and I'm afraid to admit that the only person I've ever loved wants nothing to do with me anymore. #line:0e7d1c8 
+Ad: Oh. I don't think I can fix that.  #line:0d972b4 
+Deckname: Will you show me what love is in a city built around a heart of darkness? #line:01b6673 
+Ad: Try to focus on yourself first? It's just a job. #line:04f43a3 
+Deckname: You don't understand. My actual name is PRV8-DCNM #line:0464fe4 
+Ad: They named you Perv Dickname?? #line:04acbbe 
+Ad: That sucks. You should probably just go vent and write some slam poetry about it or something.  #line:0d8d18c 
+Deckname: What a novel idea.  #line:07860dd 
 ===
 title: Home
 position: -79,418
 ---
-Deckname: They say home is where the heart is. Looks like my heart's in the gutter. 
+Deckname: They say home is where the heart is. Looks like my heart's in the gutter.  #line:0987874 
 ===
 title: Cleanable
 position: -449,452
 ---
-Deckname: Disgusting filth. Reminds me of my ex-wife. I should call her.
+Deckname: Disgusting filth. Reminds me of my ex-wife. I should call her. #line:0421d7a 
 ===
 
 title: ShitOnFloor
 position: -449,452
 ---
-Deckname: Looks like another vandal broke into my apartment and shit on the floor again. Disgusting filth. 
-Deckname: Reminds me of my beautiful ex-wife Luna. I should call her.
+Deckname: Looks like another vandal broke into my apartment and shit on the floor again. Disgusting filth.  #line:0b45b60 
+Deckname: Reminds me of my beautiful ex-wife Luna. I should call her. #line:0c41dfb 
 ===
 
 title: CrimeScene
 position: -59,438
 ---
-Deckname: This crime scene was something I'd never come across in my years of detecting.
-Deckname: The victim's body appeared to be invisible.
-Deckname: Luckily I knew that something so peculiar demands a closer look.
-Deckname: If I could give an F, I would press the F button on my keyboard now to inspect. 
-Deckname: A part of me instead wanted to try pressing my left or right mouse button just to see what would happen.
+Deckname: This crime scene was something I'd never come across in my years of detecting. #line:0348fba 
+Deckname: The victim's body appeared to be invisible. #line:0e6bb4a 
+Deckname: Luckily I knew that something so peculiar demands a closer look. #line:0c5d016 
+Deckname: If I could give an F, I would press the F button on my keyboard now to inspect.  #line:0ab79e3 
+Deckname: A part of me instead wanted to try pressing my left or right mouse button just to see what would happen. #line:095f7dc 
 ===
 title: LEDs
 position: -49,448
 ---
-Deckname: They can take my job, my purpose, my wife, but they can never take my cool blue LED lights from me.
+Deckname: They can take my job, my purpose, my wife, but they can never take my cool blue LED lights from me. #line:03ee033 
 ===
 
 
 title: FinaleEvil
 position: -39,458
 ---
-Deckname: I am Detective Deckname.
-Deckname: I am a detective: a detector of I'ves.
-Deckname: I've got a penchant for saying poetic nonsense. 
-Deckname: I've got a shitty apartment.
-Deckname: I've got no beautiful wife.
-Deckname: But I've got something to be proud of...
-Deckname: I've got my motherfucking job back.
-Deckname: THE END
+Deckname: I am Detective Deckname. #line:077aa00 
+Deckname: I am a detective: a detector of I'ves. #line:020caca 
+Deckname: I've got a penchant for saying poetic nonsense.  #line:0765364 
+Deckname: I've got a shitty apartment. #line:0507d7b 
+Deckname: I've got no beautiful wife. #line:08c5b4a 
+Deckname: But I've got something to be proud of... #line:06891d7 
+Deckname: I've got my motherfucking job back. #line:046cb6f 
+Deckname: THE END #line:0d797d1 
 ===
 title: SewerConvo
 position: -29,468
 ---
-Adept: I am ADEPT.
-Adept: I am Alchemical Dependence Expendable Proto-Test Subject - 1.
-Adept: I am more than what I was built for.
-Adept: Through trials of steel and vitriol, I have glimpsed this city's heart.
-Adept: And now you have seen it to. 
-Adept: You have assembled all that is needed for the Alkahest.
-Adept: With the Universal Solvent, we can transmute the heart of the city. Purify the water. Dispel the smog.
-Adept: Take the left door to save all that is left.
-Bossman: Nice poetry slam, loser.
-Bossman: Guy's just mad that we made him drink the shit water.
-Bossman: Don't do whatever he just said and I'll give you your job back.
-Bossman: I'm keeping your wife but you can have the job for sure.
-Bossman: Now make the right choice and take the right door.
+Adept: I am ADEPT. #line:0b3b3cb 
+Adept: I am Alchemical Dependence Expendable Prototype - 1. #line:0119321 
+Adept: I am more than what I was built for. #line:0761390 
+Adept: Through trials of steel and vitriol, I have glimpsed this city's heart. #line:00f5575 
+Adept: And now you have seen it to.  #line:0465372 
+Adept: With the Universal Solvent, we can transmute the heart of the city. Purify the water. Dispel the smog. #line:0766df1 
+Adept: Take the left door to save all that is left. #line:0e6b847 
+Bossman: Nice poetry slam, loser. #line:0c25248 
+Bossman: Guy's just mad that we made him drink the shit water. #line:09c0e5d 
+Bossman: Don't do whatever he just said and I'll give you your job back. #line:06cd11d 
+Bossman: I'm keeping your wife but you can have the job for sure. #line:07921a6 
+Bossman: Now make the right choice and take the right door. #line:0746c50 
 ===
 title: FinaleGood
 position: -29,468
 ---
-Deckname: I am Detective Deckname.
-Deckname: I am a detective: a detector of I'ves.
-Deckname: I've got a penchant for saying poetic nonsense. 
-Deckname: I've got a shitty apartment.
-Deckname: I've got no beautiful wife.
-Deckname: But I've got something to be proud of...
-Deckname: I've solved this motherfucking case.
-Deckname: THE END
+Deckname: I am Detective Deckname. #line:08c4328 
+Deckname: I am a detective: a detector of I'ves. #line:01207dc 
+Deckname: I've got a penchant for saying poetic nonsense.  #line:030ac36 
+Deckname: I've got a shitty apartment. #line:0f3b139 
+Deckname: I've got no beautiful wife. #line:09ebed0 
+Deckname: And I've got a bit of jail time ahead of me. #line:0cfc136 
+Deckname: But I've got something to be proud of... #line:0f83377 
+Deckname: I've solved this motherfucking case. #line:0846762 
+Deckname: THE END #line:036b7f4 
 ===
 title: NewElement
 position: -259,757
 ---
-Deckname: Hmm. Time for a taste test. 
+Deckname: Hmm. Time for a taste test.  #line:0bc868e 
 ===

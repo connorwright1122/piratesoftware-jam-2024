@@ -6,9 +6,14 @@ public class SewerBlocker : MonoBehaviour
 {
 
     private FlaskManager flaskManager;
-    private void OnCollisionEnter(Collision collision)
+    
+    private void OnTriggerEnter(Collider other)
     {
-        flaskManager = FindObjectOfType<FlaskManager>();
+        //flaskManager = FindObjectOfType<FlaskManager>();
+        flaskManager = other.gameObject.GetComponent<FlaskManager>();
+        Debug.Log(flaskManager);
+        flaskManager = other.gameObject.GetComponentInChildren<FlaskManager>();
+        Debug.Log(flaskManager);
         if (flaskManager != null )
         {
             Debug.Log(flaskManager._foundGold + "g");
